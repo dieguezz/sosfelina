@@ -1,0 +1,9 @@
+{
+    "[javascript]": {
+        "editor.formatOnSave": true
+    },
+    "eslint.packageManager": "npm",
+    "emmet.includeLanguages": {
+            "javascript": "javascriptreact"}
+
+}

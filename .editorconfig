@@ -1,0 +1,17 @@
+root = true
+
+[*]
+indent_style = space
+indent_size = 2
+# Use Unix line endings
+end_of_line = lf
+# The files are utf-8 encoded
+charset = utf-8
+# No whitespace at the end of line
+trim_trailing_whitespace = true
+# A file must end with an empty line - this is good for version control systems
+insert_final_newline = true
+format_on_save = true
+# tabs for makefiles
+[Makefile]
+indent_style = tab
