@@ -15,6 +15,10 @@ export default function Home() {
           content="Somos una Asociación Protectora Felina sin Ánimo de Lucro que surge de la necesidad de Gestionar Éticamente determinadas Colonias Felinas"
         />
         <meta
+          name="google-site-verification"
+          content="3qCU_yfpxNkVpXrJ8mKUeyeb2C7FpqnlF6GZSLeHmIA"
+        />
+        <meta
           name="image"
           content="https://sosfelina.z6.web.core.windows.net/static/media/logo.846aa2e2.png"
         />
