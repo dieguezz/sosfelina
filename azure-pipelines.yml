@@ -1,0 +1,12 @@
+pool:
+  vmImage: 'macOS 10.13'
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '10.1.4'
+  displayName: 'Install Node'
+- script: |
+  npm install
+  npm run build
+  npm start:prod
+  displayName: 'npm install, build and start'
