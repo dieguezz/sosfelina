@@ -134,4 +134,4 @@ if [[ -n "$POST_DEPLOYMENT_ACTION" ]]; then
   exitWithMessageOnError "post deployment action failed"
 fi
 
-echo "Finished successfully."
+echo "Finished successfully"

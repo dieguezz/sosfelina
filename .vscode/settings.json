@@ -4,6 +4,9 @@
     },
     "eslint.packageManager": "npm",
     "emmet.includeLanguages": {
-            "javascript": "javascriptreact"}
+            "javascript": "javascriptreact"
+        },
+        "appService.defaultWebAppToDeploy": "/subscriptions/2addad3c-b661-4f45-942f-fa282d0f9061/resourceGroups/RecursosSosFelina/providers/Microsoft.Web/sites/sosfelinaApp",
+        "appService.deploySubpath": ""
 
 }
