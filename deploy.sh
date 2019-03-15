@@ -118,18 +118,10 @@ if [ -e "$DEPLOYMENT_TARGET/package.json" ]; then
   cd - > /dev/null
 fi
 
-# 4. Install Bower modules
-if [ -e "$DEPLOYMENT_TARGET/bower.json" ]; then
+# 4. Run Build Task
   cd "$DEPLOYMENT_TARGET"
-  eval ./node_modules/.bin/bower install
-  exitWithMessageOnError "bower failed"
-  cd - > /dev/null
-fi
-
-# 5. Run Build Task
-  cd "$DEPLOYMENT_TARGET"
-  eval $NPM_CMD run build
-  exitWithMessageOnError "gulp failed"
+  eval $NPM_CMD runScript build
+  exitWithMessageOnError "build failed"
   cd - > /dev/null
 
 ##################################################################################################################################
