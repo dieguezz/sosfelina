@@ -5,6 +5,7 @@ import { renderToString } from 'react-dom/server'
 // Import the StyledComponents SSR util
 import { ServerStyleSheet } from 'styled-components'
 import { StaticRouter } from 'react-router-dom'
+import Helmet from 'react-helmet'
 
 const assets = require(process.env.RAZZLE_ASSETS_MANIFEST)
 
@@ -26,6 +27,7 @@ server
         </StaticRouter>,
       ),
     )
+    const helmet = Helmet.renderStatic()
 
     if (context.url) {
       res.redirect(context.url)
@@ -35,22 +37,27 @@ server
 
       res.send(
         `<!doctype html>
-    <html lang="">
-    <head>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta charSet='utf-8' />
-        <title>Welcome to Razzle</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        ${assets.client.css ? `<link rel="stylesheet" href="${assets.client.css}">` : ''}
-        ${
-          process.env.NODE_ENV === 'production'
-            ? `<script src="${assets.client.js}" defer></script>`
-            : `<script src="${assets.client.js}" defer crossorigin></script>`
-        }
-        <!-- Render the style tags gathered from the components into the DOM -->
-        ${styleTags}
-    </head>
-    <body>
+    <html ${helmet.htmlAttributes.toString()}>
+            <head>
+            ${helmet.title.toString() || (
+              <title>SOS Felina Felinae | Asociación protectora felina</title>
+            )}
+            ${helmet.meta.toString()}
+            ${helmet.link.toString()}
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta charSet='utf-8' />
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            ${assets.client.css ? `<link rel="stylesheet" href="${assets.client.css}">` : ''}
+            ${
+              process.env.NODE_ENV === 'production'
+                ? `<script src="${assets.client.js}" defer></script>`
+                : `<script src="${assets.client.js}" defer crossorigin></script>`
+            }
+            <!-- Render the style tags gathered from the components into the DOM -->
+            ${styleTags}
+            
+        </head>
+    <body ${helmet.bodyAttributes.toString()}>
         <div id="root">${markup}</div>
     </body>
 </html>`,

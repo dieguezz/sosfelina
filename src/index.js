@@ -1,5 +1,4 @@
 import http from 'http'
-import './web.config'
 
 let app = require('./server').default
 
