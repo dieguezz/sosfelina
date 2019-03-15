@@ -1,9 +1,9 @@
 import React from 'react'
-import Instagram from './assets/intagram.png'
-import Facebook from './assets/facebook.png'
-import Linkedin from './assets/linkedin.png'
-import Youtube from './assets/youtube2.png'
-import Twitter from './assets/twitter.png'
+import Instagram from '../../../public/assets/instagram.svg'
+import Facebook from '../../../public/assets/facebook.svg'
+import Linkedin from '../../../public/assets/linkedin.svg'
+import Youtube from '../../../public/assets/youtube.svg'
+import Twitter from '../../../public/assets/twitter.svg'
 
 export default function Social({ className }) {
   return (

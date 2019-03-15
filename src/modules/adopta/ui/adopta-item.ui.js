@@ -17,17 +17,21 @@ export default styled(AdoptItem)`
       border-radius: 0.25rem;
     }
   }
+  & .social-share {
+    display: flex;
+    p {
+      padding: 0 1em;
+    }
+  }
   & .cta {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  & h1 {
-    margin-bottom: 1em;
-  }
+
   & p {
     line-height: 1.65em;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     margin: 1em 0;
   }
   header {
@@ -40,6 +44,13 @@ export default styled(AdoptItem)`
     padding: 1em;
     .pics > img {
       max-width: 100%;
+    }
+    .cta,
+    .social-share {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 0;
     }
   }
 `

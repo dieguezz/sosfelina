@@ -14,20 +14,20 @@ export default function Adopta({ className }) {
 
   const getDate = date => {
     const day = date.getDate()
-    const monthIndex = date.getMonth()
+    const monthIndex = date.getMonth() + 1
     const year = date.getFullYear()
     return `${day}/${monthIndex}/${year}`
   }
-
-  const date = cats.length ? getDate(cats[cats.length - 1].date) : null
+  const date = cats.length ? getDate(cats[0].date) : null
   return (
     <div className={className}>
       <Helmet
         title="SOS Felina Felinae | Adopta un gato"
         meta={[
-          { name: 'description', content: 'Conoce a nuestros gatos y los pasos para adoptar' },
+          { name: 'Description', content: 'Conoce a nuestros gatos y los pasos para adoptar' },
         ]}
       />
+
       <header>
         <h1>Gatos en adopción</h1>
         <p>

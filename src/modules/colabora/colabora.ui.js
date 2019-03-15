@@ -2,7 +2,13 @@ import styled from 'styled-components'
 import Colabora from './colabora.component'
 
 export default styled(Colabora)`
-  padding: 3em;
+  & .head {
+    padding: 5em 3em;
+    background-color: black;
+    margin-top: 1em;
+    color: white;
+    border-radius: 0.25em;
+  }
   & .head {
     p {
       font-size: 1.125rem;
@@ -21,7 +27,6 @@ export default styled(Colabora)`
   }
 
   & ul {
-    background-color: white;
     padding: 1em;
     border-radius: 0.25rem;
     li {
@@ -33,12 +38,14 @@ export default styled(Colabora)`
       letter-spacing: 0.15em;
     }
   }
-
+  .flex {
+    flex-direction: column;
+  }
   & section {
     flex: 1 1;
     border: 1px solid black;
     border-radius: 0.25rem;
-    margin: 1em;
+    margin: 1em 0;
     padding: 2em;
     &:nth-of-type(even) {
       background-color: black;

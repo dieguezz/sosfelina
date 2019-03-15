@@ -9,7 +9,7 @@ export default styled(Footer)`
   background-color: #131411;
   color: white;
   border-radius: 0.25em;
-  margin: 1em;
+  margin: 1em 0;
 
   & .last > * {
     padding: 0 1em;

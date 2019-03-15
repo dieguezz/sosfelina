@@ -9,23 +9,25 @@ export default styled(Social)`
   & a {
     padding: 0.25em;
   }
+  position: absolute;
+  top: 1.25em;
+  right: 1em;
+  margin: auto;
 
-  & {
-    position: absolute;
-    top: 2em;
-    right: -3.5em;
-    margin: auto;
+  & ul {
+    display: flex;
   }
+  & img {
+    width: 20px;
+    padding: 0.5em;
+    background-color: white;
+    border-radius: 0.25em;
+  }
+
   @media (max-width: 890px) {
-    & ul {
-      display: flex;
-    }
-    position: absolute;
-    top: -98px;
-    right: 125px;
-    margin: auto;
-    margin: auto;
+    right: 0.5em;
+    top: 0.5em;
+    position: fixed;
     z-index: 9;
-    transform: scale(0.5);
   }
 `

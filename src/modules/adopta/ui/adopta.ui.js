@@ -17,9 +17,12 @@ export default styled(Adopta)`
     margin: 2em 0;
     text-align: center;
     font-size: 1.75rem;
+    p {
+      margin-bottom: 0.5em;
+    }
   }
 
   @media (max-width: 890px) {
-    padding: 1em;
+    padding: 1px 1em;
   }
 `

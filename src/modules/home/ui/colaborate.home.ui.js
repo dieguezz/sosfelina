@@ -19,6 +19,7 @@ export default styled(Colaborate)`
     font-size: 1.75rem;
     max-width: calc(100% - 270px);
     border-radius: 0.25rem;
+    text-align: center;
   }
 
   @media (max-width: 890px) {

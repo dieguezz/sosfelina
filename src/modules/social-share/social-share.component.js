@@ -6,7 +6,6 @@ import {
   TwitterShareButton,
   TelegramShareButton,
   WhatsappShareButton,
-  RedditShareButton,
   TumblrShareButton,
   EmailShareButton,
 } from 'react-share'
@@ -28,7 +27,9 @@ export default function SocialShare({ url, className }) {
       <FacebookShareButton url={url}>
         <FacebookIcon />
       </FacebookShareButton>
-      <GooglePlusShareButton url={url} />
+      <GooglePlusShareButton url={url}>
+        <GooglePlusIcon />
+      </GooglePlusShareButton>
       <TwitterShareButton url={url}>
         <TwitterIcon />
       </TwitterShareButton>
@@ -38,9 +39,6 @@ export default function SocialShare({ url, className }) {
       <WhatsappShareButton url={url}>
         <WhatsappIcon />
       </WhatsappShareButton>
-      <RedditShareButton url={url}>
-        <GooglePlusIcon />
-      </RedditShareButton>
       <TumblrShareButton url={url}>
         <TumblrIcon />
       </TumblrShareButton>

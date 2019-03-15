@@ -7,7 +7,6 @@ export default styled(Header)`
   align-items: center;
   flex-direction: row;
   justify-content: flex-start;
-  position: relative;
   // border-bottom: 4px solid #131411;
   & > div {
     display: none;
@@ -25,13 +24,10 @@ export default styled(Header)`
     }
   }
   & > img {
+    left: 1em;
+    top: 0.25em;
+    width: 60px;
     position: absolute;
-    right: 2em;
-    top: 1em;
-    border: 4px solid #131411;
-    background-color: white;
-    padding: 1em;
-    width: 70px;
   }
 
   & > nav {
@@ -39,6 +35,8 @@ export default styled(Header)`
     align-items: center;
     align-self: flex-end;
     z-index: 9;
+    margin-left: 69px;
+    margin-top: 7px;
   }
 
   & > nav > a {
@@ -68,16 +66,13 @@ export default styled(Header)`
     & > div {
       display: inherit;
     }
-    & .title {
-      display: block;
-      padding-right: 1em;
-      font-size: 1.25em;
-    }
     & > nav {
+      margin-left: 0;
       display: none;
       &.open {
         margin-bottom: 1em;
-        width: 100%;
+        width: 100vw;
+        background-color: white;
         flex-direction: column;
         display: flex;
         align-self: flex-start;
@@ -88,7 +83,9 @@ export default styled(Header)`
       }
     }
     img {
-      display: none;
+      left: 80px;
+      top: 0.25em;
+      width: 40px;
     }
     & .hamburguer {
       display: block;

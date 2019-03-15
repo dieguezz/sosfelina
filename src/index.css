@@ -82,7 +82,7 @@ code {
   @media (max-width: 890px) {
     body {
       padding: 0;
-      margin-top: 98px;
+      margin-top: 51px;
     }
     .flex {
       flex-direction: column;

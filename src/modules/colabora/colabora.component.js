@@ -11,53 +11,13 @@ export default function Colabora({ className }) {
           name="Description"
           content="Colabora con nosotros para ayudar a los gatitos de la calle a tener una vida mejor"
         />
-        <meta
-          name="image"
-          content="https://sosfelina.z6.web.core.windows.net/static/media/logo.846aa2e2.png"
-        />
-        <meta itemprop="name" content="SOS Felina Felinae | Gatos en Adopción" />
-        <meta
-          itemprop="description"
-          content="Somos una Asociación Protectora Felina sin Ánimo de Lucro que surge de la necesidad de Gestionar Éticamente determinadas Colonias Felinas"
-        />
-        <meta
-          itemprop="image"
-          content="https://sosfelina.z6.web.core.windows.net/static/media/logo.846aa2e2.png"
-        />
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content="SOS Felina Felinae | Gatos en Adopción" />
-        <meta
-          name="twitter:description"
-          content="Somos una Asociación Protectora Felina sin Ánimo de Lucro que surge de la necesidad de Gestionar Éticamente determinadas Colonias Felinas"
-        />
-        <meta name="twitter:site" content="@FelinaFelinae" />
-        <meta name="twitter:creator" content="@FelinaFelinae" />
-        <meta
-          name="twitter:image:src"
-          content="https://sosfelina.z6.web.core.windows.net/static/media/logo.846aa2e2.png"
-        />
-        <meta name="og:title" content="SOS Felina Felinae | Gatos en Adopción" />
-        <meta
-          name="og:description"
-          content="Somos una Asociación Protectora Felina sin Ánimo de Lucro que surge de la necesidad de Gestionar Éticamente determinadas Colonias Felinas"
-        />
-        <meta
-          name="og:image"
-          content="https://sosfelina.z6.web.core.windows.net/static/media/logo.846aa2e2.png"
-        />
-        <meta name="og:url" content="sosfelinafelinae.org" />
-        <meta name="og:site_name" content="SOS Felina Felinae" />
-        <meta name="og:locale" content="es_ES" />
-        <meta
-          name="og:video"
-          content="https://www.youtube.com/watch?v=s-7kyOnywCI&list=UUCsR7ARmqW55o2GhumpN-iw&index=4&t=3s"
-        />
-        <meta name="fb:app_id" content="edit-later" />
-        <meta name="og:type" content="website" />
       </Helmet>
       <header className="head">
         <h1>Colabora, muchos gatos necesitan tu ayuda</h1>
         <p>Si quieres comprometerte con la causa, estas son las formas en que nos puedes ayudar.</p>
+        <Link type="button" primary="true" to="contacto">
+          Contáctanos
+        </Link>
       </header>
       <div className="flex">
         <section>
@@ -112,13 +72,8 @@ export default function Colabora({ className }) {
           </p>
           <p>
             Esta plataforma es muy usada on line diariamente para comprar pienso, billetes de avión,
-            reservas hoteleras, objetos para mascotas, etc.
-          </p>
-          <p>
-            A ti te cuesta igual, y una parte de lo pagado a esa empresa va a nuestra asociación.
-          </p>
-          <p>
-            Si quieres saber más, mira este vídeo o{' '}
+            reservas hoteleras, objetos para mascotas, etc. A ti te cuesta igual, y una parte de lo
+            pagado a esa empresa va a nuestra asociación. Si quieres saber más, mira este vídeo o{' '}
             <Link type="text" to="/contacto">
               contáctanos
             </Link>

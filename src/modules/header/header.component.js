@@ -59,14 +59,6 @@ export default function Header({ className }) {
           Blog
         </NavLink>
       </nav>
-      <p>
-        <a className="phone" href="tel:911111111">
-          <small>Llámanos:</small> 911111111
-        </a>
-        <a className="phone" href="tel:666666666">
-          <small>Whatsapp:</small> 666666666
-        </a>
-      </p>
     </header>
   )
 }

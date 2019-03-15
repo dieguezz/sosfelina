@@ -48,7 +48,15 @@ const mapToCat = async (cat, setCats, addPictures) => {
     picture: await client.getAsset(pictures[0].sys.id).then(picture => picture.fields.file.url),
   }
   if (!addPictures) {
-    setCats(cats => [...cats, result])
+    setCats(cats => {
+      const catList = [...cats, result]
+      return catList.sort((a, b) => {
+        if (a.date > b.date) {
+          return -1
+        }
+        return 1
+      })
+    })
   } else {
     await getPictures(pictures, setCats, result)
   }

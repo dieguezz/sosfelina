@@ -4,7 +4,7 @@ import CatList from '../cat-list.component'
 export default styled(CatList)`
   & img {
     width: 100%;
-    max-width: 336px;
+    max-width: 365px;
   }
 
   & h2 {
@@ -21,7 +21,7 @@ export default styled(CatList)`
   display: flex;
   background-color: white;
   flex-direction: column;
-  margin: 1em;
+  margin: 1em 0;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   position: relative;
