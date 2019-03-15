@@ -6,7 +6,7 @@ steps:
     versionSpec: '10.1.4'
   displayName: 'Install Node'
 - script: |
-  npm install
-  npm run build
-  npm start:prod
-  displayName: 'npm install, build and start'
+  yarn install
+  yarn build
+  yarn start:prod
+  displayName: 'yarn install, build and start'
