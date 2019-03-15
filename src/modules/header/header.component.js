@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
-import Logo from './assets/logo.png'
+import Logo from '../../../public/assets/logo.png'
 
 const StyledMenu = styled.div`
   display: flex;
