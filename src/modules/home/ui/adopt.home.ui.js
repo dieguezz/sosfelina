@@ -6,8 +6,10 @@ export default styled(Adopt)`
   align-items: center;
   justify-content: space-between;
   padding-bottom: 0;
-  background-color: black;
-  padding: 0;
+  background: url('assets/hero-image.jpg');
+  background-size: cover;
+  background-position: center right;
+  padding: 150px 0;
   margin-top: 1em;
   border-radius: 0.25em;
   overflow: hidden;
@@ -17,6 +19,20 @@ export default styled(Adopt)`
       color: #f2f2f2;
       padding-left: 3em;
 
+      span {
+        color: #78abe1;
+        display: block;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 400;
+        margin-bottom: 15px;
+      }
+      h1 {
+        color: #78abe1;
+        font-weight: 600;
+        max-width: 60%;
+      }
+
       p {
         padding: 1em 0;
         font-size: 1.25em;
@@ -25,9 +41,12 @@ export default styled(Adopt)`
   }
 
   & > .cta > img {
+    display: none;
     order: -1;
+    object-fit: cover;
     height: 400px;
     max-width: 100%;
+    position: relative;
   }
   @media (max-width: 768px) {
     flex-direction: column;

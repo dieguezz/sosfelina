@@ -6,6 +6,7 @@ export default function Adopt({ className }) {
   return (
     <section className={className}>
       <header>
+        <span>Gracias por visitarnos</span>
         <h1>Conoce a los gatos que necesitan tu ayuda</h1>
         <p />
         <Link primary="true" type="button" to="/adopta">
