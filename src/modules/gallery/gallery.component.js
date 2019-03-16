@@ -1,7 +1,7 @@
 import React from 'react'
 
 // @TODO: Remove mock
-import CatList from './ui/cat-list.adopta.ui'
+import CatList from './cat-list.ui'
 // import GalleryFilter from './ui/filtes.adopta.ui'
 
 export default function Gallery({ className, cats }) {

@@ -38,12 +38,13 @@ const mapToArticle = ({ ...entry }) => ({
 })
 
 const mapToCat = async (cat, setCats, addPictures) => {
-  const { name, id, pictures, url, text } = cat.fields
+  const { name, id, pictures, url, text, categoria } = cat.fields
   const result = {
     name,
     text,
     id,
     url,
+    category: categoria,
     date: new Date(cat.sys.createdAt),
     picture: await client.getAsset(pictures[0].sys.id).then(picture => picture.fields.file.url),
   }

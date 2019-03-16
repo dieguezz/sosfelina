@@ -2,20 +2,31 @@ import styled from 'styled-components'
 import Social from './social.component'
 
 export default styled(Social)`
+  position: absolute;
+  top: 1.25em;
+  right: 1em;
+  margin: auto;
   & a p {
     display: none;
   }
 
   & a {
     padding: 0.25em;
+    text-decoration: none;
+    color: black;
   }
-  position: absolute;
-  top: 1.25em;
-  right: 1em;
-  margin: auto;
 
   & ul {
     display: flex;
+    align-items: center;
+    li:first-child {
+      background-color: #ed0719;
+      color: white;
+      display: block;
+      padding: 0.5em;
+      border-radius: 0.25em;
+      margin-top: -3px;
+    }
   }
   & img {
     width: 20px;
@@ -24,10 +35,13 @@ export default styled(Social)`
     border-radius: 0.25em;
   }
 
-  @media (max-width: 890px) {
+  @media (max-width: 992px) {
     right: 0.5em;
     top: 0.5em;
     position: fixed;
     z-index: 9;
+    ul li:first-child {
+      display: none;
+    }
   }
 `

@@ -59,7 +59,7 @@ export default styled(Colabora)`
     border-bottom: 2px solid black;
     padding: 0;
   }
-  @media (max-width: 890px) {
+  @media (max-width: 768px) {
     padding: 1em;
     .head  {
       padding-top: 1em;

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-import Adopta from '../adopta.component'
+import Apadrina from './apadrina.component'
 
-export default styled(Adopta)`
+export default styled(Apadrina)`
   & header {
     padding: 5em 3em;
     background-color: black;

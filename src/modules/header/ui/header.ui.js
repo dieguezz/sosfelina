@@ -7,7 +7,6 @@ export default styled(Header)`
   align-items: center;
   flex-direction: row;
   justify-content: flex-start;
-  // border-bottom: 4px solid #131411;
   & > div {
     display: none;
   }
@@ -36,7 +35,7 @@ export default styled(Header)`
     align-self: flex-end;
     z-index: 9;
     margin-left: 69px;
-    margin-top: 7px;
+    margin-top: 2px;
   }
 
   & > nav > a {
@@ -45,6 +44,8 @@ export default styled(Header)`
     color: #666;
     text-transform: uppercase;
     transition: color linear 0.2s, background-clolor linear 0.2s;
+    border-radius: 0.25em;
+    margin: 0 0.2em;
   }
 
   & > nav > a:hover,
@@ -55,7 +56,7 @@ export default styled(Header)`
   & .title {
     display: none;
   }
-  @media (max-width: 890px) {
+  @media (max-width: 992px) {
     position: fixed;
     top: 0;
     left: 0;
@@ -63,6 +64,7 @@ export default styled(Header)`
     width: 100vw;
     background-color: #f2f2f2;
     flex-direction: column;
+
     & > div {
       display: inherit;
     }
@@ -72,7 +74,8 @@ export default styled(Header)`
       &.open {
         margin-bottom: 1em;
         width: 100vw;
-        background-color: white;
+        height: 100vh;
+        background-color: #f2f2f2;
         flex-direction: column;
         display: flex;
         align-self: flex-start;
@@ -83,19 +86,23 @@ export default styled(Header)`
       }
     }
     img {
-      left: 80px;
-      top: 0.25em;
-      width: 40px;
+      display: none;
     }
     & .hamburguer {
       display: block;
-      padding: 1em;
+      margin: 0.55em;
+      border-radius: 0.25em;
+      padding: 0.5em;
       background-color: black;
       color: white;
     }
     nav + p {
       margin-top: 0.5em;
       display: flex;
+    }
+    & nav a {
+      border-radius: 0;
+      margin: 0;
     }
   }
 `

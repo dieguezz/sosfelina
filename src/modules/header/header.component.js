@@ -49,9 +49,6 @@ export default function Header({ className }) {
         <NavLink onClick={() => toggleMenu(false)} exact activeClassName="active" to="/colabora">
           Colabora
         </NavLink>
-        <NavLink onClick={() => toggleMenu(false)} exact activeClassName="active" to="/nosotros">
-          Nosotros
-        </NavLink>
         <NavLink onClick={() => toggleMenu(false)} exact activeClassName="active" to="/contacto">
           Contacto
         </NavLink>

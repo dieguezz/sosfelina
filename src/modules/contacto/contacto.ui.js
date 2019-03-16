@@ -3,6 +3,9 @@ import Contacto from './contacto.component'
 
 export default styled(Contacto)`
   padding: 3em;
+  & .flex {
+    justify-content: space-between;
+  }
   & h1 {
     padding-bottom: 1em;
   }
@@ -19,10 +22,7 @@ export default styled(Contacto)`
     padding: 0.5em 0;
   }
 
-  & .block {
-    padding-bottom: 2em;
-  }
-  @media (max-width: 890px) {
+  @media (max-width: 768px) {
     padding: 1em;
   }
 `

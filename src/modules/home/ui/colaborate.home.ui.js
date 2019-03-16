@@ -22,7 +22,7 @@ export default styled(Colaborate)`
     text-align: center;
   }
 
-  @media (max-width: 890px) {
+  @media (max-width: 768px) {
     & > p {
       max-width: unset;
     }

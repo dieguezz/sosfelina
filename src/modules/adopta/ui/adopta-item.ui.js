@@ -40,7 +40,7 @@ export default styled(AdoptItem)`
       margin-left: 2em;
     }
   }
-  @media (max-width: 890px) {
+  @media (max-width: 768px) {
     padding: 1em;
     .pics > img {
       max-width: 100%;

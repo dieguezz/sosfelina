@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Helmet from 'react-helmet'
-import Gallery from './ui/gallery.adopta.ui'
+import Gallery from '../gallery/gallery.ui'
 import Link from '../Link/link.component'
 import { getCats } from '../contentful/contentful.service'
 
@@ -39,6 +39,13 @@ export default function Adopta({ className }) {
         </Link>
       </header>
       <div className="cta">
+        <p>Estos pequeñines están esperando un hogar</p>
+      </div>
+      <div className="inspirational">
+        Última actualización: <i>{date}</i>
+      </div>
+      <Gallery cats={cats} />
+      <div className="cta">
         <p>
           Si no puedes <b>adoptar</b>, tienes más formas para
         </p>
@@ -46,10 +53,6 @@ export default function Adopta({ className }) {
           colaborar
         </Link>
       </div>
-      <div className="inspirational">
-        Última actualización: <i>{date}</i>
-      </div>
-      <Gallery cats={cats} />
     </div>
   )
 }

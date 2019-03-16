@@ -18,7 +18,7 @@ export default styled(Article)`
     display: block;
     max-width: 100%;
   }
-  @media (max-width: 890px) {
+  @media (max-width: 768px) {
     padding: 1em;
   }
 `

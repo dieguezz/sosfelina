@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Gallery from '../gallery.component'
+import Gallery from './gallery.component'
 
 export default styled(Gallery)`
   padding: 1em 0;

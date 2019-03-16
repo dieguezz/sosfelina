@@ -49,8 +49,8 @@ export default function Colabora({ className }) {
             su manutención / gastos veterinarios. Podrás venir a visitarlo siempre que quieras y te
             mandaremos actualizaciones periódicas de su estado.
           </p>
-          <Link primary="true" type="button" to="/contacto">
-            Contacta con nosotros
+          <Link primary="true" type="button" to="/apadrina">
+            Apadrina
           </Link>
         </section>
       </div>
@@ -71,12 +71,16 @@ export default function Colabora({ className }) {
             nos ayudas?
           </p>
           <p>
-            Esta plataforma es muy usada on line diariamente para comprar pienso, billetes de avión,
-            reservas hoteleras, objetos para mascotas, etc. A ti te cuesta igual, y una parte de lo
-            pagado a esa empresa va a nuestra asociación. Si quieres saber más, mira este vídeo o{' '}
-            <Link type="text" to="/contacto">
-              contáctanos
-            </Link>
+            Esta plataforma es muy usada on line diariamente para comprar en miles de tiendas de
+            renombre como El Corte Inglés, Aliexpress, Fnac y muchísimas más. A ti te cuesta igual,
+            y una parte de lo pagado la empresa lo dona a nuestra asociación.Consulta el{' '}
+            <a
+              className="link"
+              href="https://www.helpfreely.org/es/shops/"
+              target="_blank"
+              rel="noopener noreferrer">
+              listado de tiendas
+            </a>
             .
           </p>
         </section>

@@ -4,11 +4,28 @@ import Facebook from '../../../public/assets/facebook.svg'
 import Linkedin from '../../../public/assets/linkedin.svg'
 import Youtube from '../../../public/assets/youtube.svg'
 import Twitter from '../../../public/assets/twitter.svg'
+import Phone from '../../../public/assets/phone.svg'
+import Whatsapp from '../../../public/assets/whatsapp.svg'
 
 export default function Social({ className }) {
   return (
     <div className={className}>
       <ul>
+        <li>
+          <span>647665310</span>
+        </li>
+        <li>
+          <a href="tel:647665310">
+            <p>Teléfono</p>
+            <img src={Phone} alt="Instagram" />
+          </a>
+        </li>
+        <li>
+          <a href="https://wa.me/34626978712" target="_blank" rel="noopener noreferrer">
+            <p>Whatsapp</p>
+            <img src={Whatsapp} alt="Instagram" />
+          </a>
+        </li>
         <li>
           <a
             href="https://www.instagram.com/sosfelinafelinae"

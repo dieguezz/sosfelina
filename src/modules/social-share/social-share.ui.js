@@ -14,7 +14,7 @@ export default styled(SocialShare)`
     outline: 0;
     width: 40px;
   }
-  @media (max-width: 890px) {
+  @media (max-width: 768px) {
     padding: 0em;
     justify-content: center;
   }

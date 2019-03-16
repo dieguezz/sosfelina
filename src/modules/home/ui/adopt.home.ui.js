@@ -10,6 +10,7 @@ export default styled(Adopt)`
   padding: 0;
   margin-top: 1em;
   border-radius: 0.25em;
+  overflow: hidden;
   & {
     header {
       order: 0;
@@ -26,8 +27,9 @@ export default styled(Adopt)`
   & > .cta > img {
     order: -1;
     height: 400px;
+    max-width: 100%;
   }
-  @media (max-width: 890px) {
+  @media (max-width: 768px) {
     flex-direction: column;
     position: relative;
     & > .cta > img {

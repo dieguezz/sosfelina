@@ -16,7 +16,7 @@ export default styled(Blog)`
     margin-top: 2em;
     font-size: 1.25em;
   }
-  @media (max-width: 890px) {
+  @media (max-width: 768px) {
     padding: 1em;
   }
 `

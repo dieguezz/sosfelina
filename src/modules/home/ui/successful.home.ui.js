@@ -20,7 +20,7 @@ export default styled(SuccessfulCats)`
     margin: 2em 0;
     display: block;
   }
-  @media (max-width: 890px) {
+  @media (max-width: 768px) {
     & iframe {
       min-height: 250px;
     }

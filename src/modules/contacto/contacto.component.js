@@ -1,5 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import Logo from '../../../public/assets/logo.png'
 
 export default function Contacto({ className }) {
   return (
@@ -28,6 +29,7 @@ export default function Contacto({ className }) {
           <a href="mailto:sosfelinaaranjuez@gmail.com">sosfelinaaranjuez@gmail.com</a>
           <ul />
         </div>
+        <img src={Logo} alt="Logo" />
       </div>
     </div>
   )

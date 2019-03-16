@@ -87,7 +87,7 @@ code {
     border-radius: .25em;
 }
 
-  @media (max-width: 890px) {
+  @media (max-width: 768px) {
     body {
       padding: 0;
       margin-top: 51px;
