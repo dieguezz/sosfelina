@@ -20,12 +20,12 @@ export default function AdoptItem({ match, className }) {
   return (
     <div className={className}>
       <Helmet
-        title={`SOS Felina Felinae | Adopta a ${cat.name}`}
+        title={`SOS Felina Felinae | Adopta ${cat.name ? ` a ${cat.name}` : ' un gato'}`}
         meta={[
           {
             name: 'description',
             content: `Conoce a ${
-              cat.name
+              cat.name ? `${cat.name}` : ' este gato'
             } y los pasos para adoptarlo, apadrinarlo, o ayudarlo de alguna otra manera.`,
           },
         ]}

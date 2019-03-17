@@ -19,14 +19,22 @@ export default function Contacto({ className }) {
           <h2>Teléfonos:</h2>
           <ul>
             <li>
-              <a href="tel:647665310">647 665 310</a> (Ana)
+              <a itemprop="telephone" href="tel:647665310">
+                647 665 310
+              </a>{' '}
+              (Ana)
             </li>
             <li>
-              <a href="tel:626978712">626 978 712</a> (Sonia)
+              <a itemprop="telephone" href="tel:626978712">
+                626 978 712
+              </a>{' '}
+              (Sonia)
             </li>
           </ul>
           <h2>Email:</h2>
-          <a href="mailto:sosfelinaaranjuez@gmail.com">sosfelinaaranjuez@gmail.com</a>
+          <a itemprop="email" href="mailto:sosfelinaaranjuez@gmail.com">
+            sosfelinaaranjuez@gmail.com
+          </a>
           <ul />
         </div>
         <img src={Logo} alt="Logo" />

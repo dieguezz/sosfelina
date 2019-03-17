@@ -32,27 +32,53 @@ export default function Header({ className }) {
   }
   return (
     <header className={className} ref={wrapperRef}>
-      <img src={Logo} alt="SOS Felina Felinae" />
+      <img itemprop="logo" src={Logo} alt="SOS Felina Felinae" />
       <StyledMenu>
         <div className="hamburguer" onClick={() => toggleMenu(!isOpen)}>
           Menu
         </div>
         <div className="title">SOS Felina Felinae</div>
       </StyledMenu>
-      <nav className={isOpen ? 'open' : ''}>
-        <NavLink onClick={() => toggleMenu(false)} exact activeClassName="active" to="/">
+      <nav
+        itemscope
+        itemtype="http://www.schema.org/SiteNavigationElement"
+        className={isOpen ? 'open' : ''}>
+        <NavLink
+          itemprop="url"
+          onClick={() => toggleMenu(false)}
+          exact
+          activeClassName="active"
+          to="/">
           Inicio
         </NavLink>
-        <NavLink onClick={() => toggleMenu(false)} activeClassName="active" to="/adopta">
+        <NavLink
+          itemprop="url"
+          onClick={() => toggleMenu(false)}
+          activeClassName="active"
+          to="/adopta">
           Adopta
         </NavLink>
-        <NavLink onClick={() => toggleMenu(false)} exact activeClassName="active" to="/colabora">
+        <NavLink
+          itemprop="url"
+          onClick={() => toggleMenu(false)}
+          exact
+          activeClassName="active"
+          to="/colabora">
           Colabora
         </NavLink>
-        <NavLink onClick={() => toggleMenu(false)} exact activeClassName="active" to="/contacto">
+        <NavLink
+          itemprop="url"
+          onClick={() => toggleMenu(false)}
+          exact
+          activeClassName="active"
+          to="/contacto">
           Contacto
         </NavLink>
-        <NavLink onClick={() => toggleMenu(false)} activeClassName="active" to="/blog">
+        <NavLink
+          itemprop="url"
+          onClick={() => toggleMenu(false)}
+          activeClassName="active"
+          to="/blog">
           Blog
         </NavLink>
       </nav>

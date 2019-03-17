@@ -7,7 +7,7 @@ import Helmet from 'react-helmet'
 
 export default function Home() {
   return (
-    <div className="page">
+    <div className="home">
       <Helmet>
         <title>SOS Felina Felinae | Gatos en Adopción</title>
         <meta
