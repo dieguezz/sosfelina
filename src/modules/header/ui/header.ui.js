@@ -2,11 +2,19 @@ import styled from 'styled-components'
 import Header from '../header.component'
 
 export default styled(Header)`
+  background: #fff;
+  left: 0;
+  padding: 0;
+  box-shadow: 0px 0px 12px rgba(0,0,0,0.15);
+  top: 0;
   z-index: 9;
   display: flex;
   align-items: center;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-around;
+  position: fixed;
+  width: 100%;
+
   & > div {
     display: none;
   }
@@ -22,20 +30,14 @@ export default styled(Header)`
       margin-left: 1em;
     }
   }
-  & > img {
-    left: 1em;
-    top: 0.25em;
+  & a > img {
     width: 60px;
-    position: absolute;
   }
 
   & > nav {
     display: flex;
     align-items: center;
-    align-self: flex-end;
     z-index: 9;
-    margin-left: 69px;
-    margin-top: 2px;
   }
 
   & > nav > a {
@@ -43,16 +45,42 @@ export default styled(Header)`
     text-decoration: none;
     color: #666;
     text-transform: uppercase;
-    transition: color linear 0.2s, background-clolor linear 0.2s;
+    transition: color ease-in-out 0.35s, font-weight ease-in-out 0.35s;
     border-radius: 0.25em;
     margin: 0 0.2em;
+    padding: 25px;
+    position: relative;
+
+    &:after {
+      background: #78abe1;
+      content: '';
+      height: 2px;
+      left: 0;
+      bottom: 0;
+      position: absolute;
+      transition: width ease-in-out 0.35s;
+      width: 0%;
+    }
   }
 
-  & > nav > a:hover,
   & > nav > a.active {
-    color: white;
-    background-color: #131411;
+    color: #78abe1;
+    font-weight: 600;
+    border-radius: 0;
+
+    &:after {
+      width: 100%;
+    }
   }
+  & > nav > a:hover {
+    color: #78abe1;
+    border-radius: 0;
+
+    &:after {
+      width: 100%;
+    }
+  }
+
   & .title {
     display: none;
   }

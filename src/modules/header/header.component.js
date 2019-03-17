@@ -32,7 +32,10 @@ export default function Header({ className }) {
   }
   return (
     <header className={className} ref={wrapperRef}>
-      <img src={Logo} alt="SOS Felina Felinae" />
+
+      <NavLink onClick={() => toggleMenu(false)} exact activeClassName="active" to="/">
+        <img src={Logo} alt="SOS Felina Felinae" />
+      </NavLink>
       <StyledMenu>
         <div className="hamburguer" onClick={() => toggleMenu(!isOpen)}>
           Menu
@@ -40,9 +43,7 @@ export default function Header({ className }) {
         <div className="title">SOS Felina Felinae</div>
       </StyledMenu>
       <nav className={isOpen ? 'open' : ''}>
-        <NavLink onClick={() => toggleMenu(false)} exact activeClassName="active" to="/">
-          Inicio
-        </NavLink>
+
         <NavLink onClick={() => toggleMenu(false)} activeClassName="active" to="/adopta">
           Adopta
         </NavLink>
@@ -56,6 +57,7 @@ export default function Header({ className }) {
           Blog
         </NavLink>
       </nav>
+
     </header>
   )
 }

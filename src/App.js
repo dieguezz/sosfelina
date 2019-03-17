@@ -27,12 +27,12 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
 body {
   margin: 0;
   padding: 0;
-  font-family: "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
