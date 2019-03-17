@@ -50,6 +50,10 @@ server
             <meta property="og:locale" content="es_ES" />
             <meta property="og:type" content="website" />
             <meta property="og:image" content="https://images.ctfassets.net/qhgwkj3lu81s/4FzHhePlYHF9CWxs2daloM/7d1969fa583323b97177dd7672cad5f7/SOS-FELINA-Felinae__1___1_.jpg?h=250" />
+            <meta property="og:image:secure_url" content="https://images.ctfassets.net/qhgwkj3lu81s/4FzHhePlYHF9CWxs2daloM/7d1969fa583323b97177dd7672cad5f7/SOS-FELINA-Felinae__1___1_.jpg?h=250" />
+            <meta property="og:image:alt" content="SOS Felina Felinae | Asociación protectora felina" />
+            <meta property=" og:image:width" content="197" />
+            <meta property=" og:image:height" content="250" />
             <meta property="og:site_name" content="SOS Felina Felinae" />
             <meta property="og:url" content="${url}" />
             <meta name="twitter:card" content="app"></meta>
