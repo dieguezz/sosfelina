@@ -6,10 +6,11 @@ import { renderToString } from 'react-dom/server'
 import { ServerStyleSheet } from 'styled-components'
 import { StaticRouter } from 'react-router-dom'
 import Helmet from 'react-helmet'
-
+import compression from 'compression'
 const assets = require(process.env.RAZZLE_ASSETS_MANIFEST)
 
 const server = express()
+server.use(compression())
 
 server
   .disable('x-powered-by')
