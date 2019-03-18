@@ -9,16 +9,18 @@ export default function SuccessfulCats({ className }) {
       </header>
       <div className="content">
         <iframe
-          title="foo"
-          src="https://www.youtube.com/embed/s-7kyOnywCI?controls=0"
-          frameBorder="0"
+          title="gatos-de-exito"
+          width="1280"
+          height="720"
+          src="https://www.youtube.com/embed/xKCE2jnP-xQ?rel=0"
+          frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
+          allowfullscreen
         />
         <div className="cta">
           <p>
             Otras personas nos han ayudado.{' '}
-            <Link type="text" to="/gatos-con-suerte">
+            <Link type="text" to="/casos-de-exito">
               Conócelas
             </Link>
           </p>

@@ -1,7 +1,6 @@
 import React from 'react'
 import Instagram from '../../../public/assets/instagram.svg'
 import Facebook from '../../../public/assets/facebook.svg'
-import Linkedin from '../../../public/assets/linkedin.svg'
 import Youtube from '../../../public/assets/youtube.svg'
 import Twitter from '../../../public/assets/twitter.svg'
 import Phone from '../../../public/assets/phone.svg'
@@ -47,7 +46,7 @@ export default function Social({ className }) {
 
         <li>
           <a
-            href="https://www.pinterest.es/felinafelinae"
+            href="https://www.youtube.com/channel/UCCsR7ARmqW55o2GhumpN-iw"
             target="_blank"
             rel="noopener noreferrer">
             <p>Youtube</p>

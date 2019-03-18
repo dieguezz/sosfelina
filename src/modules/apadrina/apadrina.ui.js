@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import Apadrina from './apadrina.component'
+import Bg from '../../../public/assets/hero-image.jpg'
 
 export default styled(Apadrina)`
   max-width: 1200px;
@@ -9,7 +10,7 @@ export default styled(Apadrina)`
     padding: 0 3em;
     color: #78abe1;
     margin-top: 1em;
-    background-image: url(http://localhost:3001/static/media/hero-image.f6265e2a.jpg);
+    background-image: url(${Bg});
     background-size: cover;
     background-position: 50% 50%;
     height: 600px;

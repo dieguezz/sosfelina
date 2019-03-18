@@ -7,6 +7,8 @@ import Apadrina from './modules/apadrina/apadrina.ui'
 import Contacto from './modules/contacto/contacto.ui'
 import Adopt from './modules/adopta/adopta.routes'
 import Blog from './modules/blog/blog.routes'
+import Nosotros from './modules/nosotros/nosotros.ui'
+import Stories from './modules/stories/stories.ui'
 
 export default function Routes() {
   return (
@@ -17,8 +19,9 @@ export default function Routes() {
       <Route exact path="/como-adoptar" component={HowToAdopt} />
       <Route exact path="/colabora" component={Colabora} />
       <Route exact path="/contacto" component={Contacto} />
+      <Route exact path="/nosotros" component={Nosotros} />
+      <Route exact path="/casos-de-exito" component={Stories} />
       <Route path="/blog" component={Blog} />
-      {/* <Route exact path="/gatos-con-suerte" component={SuccessfulCats} /> */}
       {/* <Route component={NotFound} /> */}
     </Switch>
   )

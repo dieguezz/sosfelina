@@ -39,6 +39,15 @@ server
         `<!doctype html>
     <html ${helmet.htmlAttributes.toString()} prefix="og: http://ogp.me/ns/website#" lang="es">
             <head>
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136531901-1"></script>
+            <script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'UA-136531901-1');
+            </script>
             ${helmet.title.toString() || (
               <title>SOS Felina Felinae | Asociación protectora felina</title>
             )}

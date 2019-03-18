@@ -11,6 +11,7 @@ export default styled(Article)`
   font-size: 1.25rem;
   max-width: 1200px;
   margin: 0 auto;
+  word-wrap: break-word;
   margin-top: 78px;
   & header > h1 {
     color: #78abe1;

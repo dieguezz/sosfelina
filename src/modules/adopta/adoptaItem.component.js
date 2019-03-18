@@ -38,9 +38,14 @@ export default function AdoptItem({ match, className }) {
           <h1>{cat.name}</h1>
           <p>{cat.text}</p>
           <div className="cta">
-            <Link type="button" to="/contacto">
-              Adoptar o apadrinar
-            </Link>
+            <div>
+              <Link type="button" to="/contacto">
+                Adoptar o apadrinar
+              </Link>
+              <Link type="button" to="/adopta">
+                Volver atrás
+              </Link>
+            </div>
             <div className="social-share">
               <p>Comparte</p>
               <SocialShare url={url} />

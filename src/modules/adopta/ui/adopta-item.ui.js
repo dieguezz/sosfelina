@@ -32,6 +32,9 @@ export default styled(AdoptItem)`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    & > div > * {
+      margin: 0.5em;
+    }
   }
 
   & p {
