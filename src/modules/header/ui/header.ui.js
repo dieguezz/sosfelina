@@ -7,6 +7,12 @@ export default styled(Header)`
   align-items: center;
   flex-direction: row;
   justify-content: flex-start;
+  position: fixed;
+  width: 100vw;
+  background-color: white;
+  top: 0;
+  padding: 1em;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   & > div {
     display: none;
   }
@@ -42,16 +48,19 @@ export default styled(Header)`
     padding: 0.7em;
     text-decoration: none;
     color: #666;
+    font-weight: bold;
     text-transform: uppercase;
     transition: color linear 0.2s, background-clolor linear 0.2s;
     border-radius: 0.25em;
     margin: 0 0.2em;
+    border: 1px solid transparent;
   }
 
   & > nav > a:hover,
   & > nav > a.active {
-    color: white;
-    background-color: #131411;
+    color: #78abe1;
+    border: 1px solid #78abe1;
+    font-weight: bold;
   }
   & .title {
     display: none;
@@ -61,8 +70,8 @@ export default styled(Header)`
     top: 0;
     left: 0;
     align-items: flex-start;
+    padding: 0;
     width: 100vw;
-    background-color: #f2f2f2;
     flex-direction: column;
 
     & > div {
@@ -75,7 +84,6 @@ export default styled(Header)`
         margin-bottom: 1em;
         width: 100vw;
         height: 100vh;
-        background-color: #f2f2f2;
         flex-direction: column;
         display: flex;
         align-self: flex-start;
@@ -93,8 +101,11 @@ export default styled(Header)`
       margin: 0.55em;
       border-radius: 0.25em;
       padding: 0.5em;
-      background-color: black;
-      color: white;
+      background-color: white;
+      color: #000000;
+      text-transform: uppercase;
+      font-weight: bold;
+      border: 2px solid black;
     }
     nav + p {
       margin-top: 0.5em;

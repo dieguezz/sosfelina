@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import Adopt from '../adopt.home.component'
+import AdoptCat from '../../../../public/assets/cat-header.jpg'
 
 export default styled(Adopt)`
   display: flex;
@@ -8,13 +9,18 @@ export default styled(Adopt)`
   padding-bottom: 0;
   background-color: black;
   padding: 0;
-  margin-top: 1em;
-  border-radius: 0.25em;
   overflow: hidden;
+  background-image: url('${AdoptCat}');
+  background-position: 50% 50%;
+  background-size: cover;
+  min-height: 600px;
+  & h1 {
+    max-width: 60%;
+  }
   & {
     header {
       order: 0;
-      color: #f2f2f2;
+      color: #78abe1;
       padding-left: 3em;
 
       p {
@@ -30,8 +36,18 @@ export default styled(Adopt)`
     max-width: 100%;
   }
   @media (max-width: 768px) {
+    margin-top: 57px;
     flex-direction: column;
     position: relative;
+    &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .5;
+    pointer-events: none;
+}
     & > .cta > img {
       max-height: 400px;
       width: 100vw;
@@ -49,9 +65,9 @@ export default styled(Adopt)`
       padding-left: 0;
       justify-content: center;
       h1 {
-        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
         font-weight: bold;
-        font-size: 1.5em;
+        text-transform: uppercase;
         text-align: center;
         padding: 0 2em;
       }

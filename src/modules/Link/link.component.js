@@ -12,10 +12,10 @@ const StyledLink = styled(RouterLink)`
   ${props =>
     props.type === 'text' &&
     css`
-      color: ${props => (props.primary ? '#f2f2f2' : '#131411')};
+      color: ${props => (props.primary ? '#78abe1' : '#78abe1')};
       border: 2px solid transparent;
       &:hover {
-        border-bottom: 2px solid ${props => (props.primary ? '#f2f2f2' : '#131411')};
+        border-bottom: 2px solid ${props => (props.primary ? '#78abe1' : '#78abe1')};
       }
       padding: 0;
     `}
@@ -23,14 +23,14 @@ const StyledLink = styled(RouterLink)`
     props.type === 'button' &&
     css`
       border: 2px solid
-        ${props => (!props.noborder && (props.primary ? '#f2f2f2' : '#131411')) || 'transparent'};
-      color: ${props => (props.primary ? '#f2f2f2' : '#131411')};
+        ${props => (!props.noborder && (props.primary ? '#78abe1' : '#78abe1')) || 'transparent'};
+      color: ${props => (props.primary ? '#78abe1' : '#78abe1')};
       padding: 0.7em;
       border-radius: ${props => (props.noborder ? '0' : '.25rem')};
       &:hover {
-        background-color: ${props => (props.primary ? '#f2f2f2' : '#131411')};
+        background-color: ${props => (props.primary ? '#78abe1' : '#78abe1')};
         border-color: transparent;
-        color: ${props => (props.primary ? '#131411' : '#f2f2f2')};
+        color: white;
       }
     `};
 `

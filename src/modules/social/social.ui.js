@@ -2,10 +2,11 @@ import styled from 'styled-components'
 import Social from './social.component'
 
 export default styled(Social)`
-  position: absolute;
-  top: 1.25em;
+  position: fixed;
+  top: 1em;
   right: 1em;
   margin: auto;
+  z-index: 9;
   & a p {
     display: none;
   }
@@ -36,7 +37,7 @@ export default styled(Social)`
   }
 
   @media (max-width: 992px) {
-    right: 0.5em;
+    right: 1em;
     top: 0.5em;
     position: fixed;
     z-index: 9;

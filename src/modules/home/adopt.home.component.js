@@ -12,9 +12,6 @@ export default function Adopt({ className }) {
           Adopta
         </Link>
       </header>
-      <div className="cta">
-        <img src={AdoptCat} alt="Adopta un gato" />
-      </div>
     </section>
   )
 }

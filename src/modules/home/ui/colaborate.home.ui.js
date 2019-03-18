@@ -2,8 +2,7 @@ import styled from 'styled-components'
 import Colaborate from '../colaborate.component'
 
 export default styled(Colaborate)`
-  padding: 3em;
-  background-color: #f2f2f2;
+  padding: 5em;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,6 +19,7 @@ export default styled(Colaborate)`
     max-width: calc(100% - 270px);
     border-radius: 0.25rem;
     text-align: center;
+    color: #78abe1;
   }
 
   @media (max-width: 768px) {

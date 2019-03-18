@@ -2,7 +2,12 @@ import styled from 'styled-components'
 import AdoptItem from '../adoptaItem.component'
 
 export default styled(AdoptItem)`
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 78px;
   padding: 3em;
+  text-align: justify;
+
   .pics {
     display: flex;
     flex-direction: row;
@@ -31,8 +36,9 @@ export default styled(AdoptItem)`
 
   & p {
     line-height: 1.65em;
-    font-size: 1.125rem;
     margin: 1em 0;
+    font-size: 1rem;
+    color: #666;
   }
   header {
     display: flex;
@@ -40,7 +46,14 @@ export default styled(AdoptItem)`
       margin-left: 2em;
     }
   }
+  .spinner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10em;
+  }
   @media (max-width: 768px) {
+    margin-top: 57px;
     padding: 1em;
     .pics > img {
       max-width: 100%;

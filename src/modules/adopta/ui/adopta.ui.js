@@ -1,13 +1,23 @@
 import styled from 'styled-components'
 import Adopta from '../adopta.component'
+import Bg from '../../../../public/assets/hero-image.jpg'
 
 export default styled(Adopta)`
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 78px;
   & header {
-    padding: 5em 3em;
-    background-color: black;
-    color: white;
-    border-radius: 0.25em;
+    color: #78abe1;
     margin-top: 1em;
+    background-image: url(http://localhost:3001/static/media/hero-image.f6265e2a.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 600px;
+    display: flex;
+    padding: 0 3em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
   }
   & header p {
     font-size: 1.25rem;
@@ -18,11 +28,19 @@ export default styled(Adopta)`
     text-align: center;
     font-size: 1.75rem;
     p {
-      margin-bottom: 0.5em;
+      color: #78abe1;
+      padding: 1em;
+      font-weight: bold;
     }
   }
-
+  .spinner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10em;
+  }
   @media (max-width: 768px) {
     padding: 1px 1em;
+    margin-top: 57px;
   }
 `

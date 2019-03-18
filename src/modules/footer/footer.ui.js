@@ -5,12 +5,10 @@ export default styled(Footer)`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
-  background-color: #131411;
-  color: white;
+  padding: 1em;
+  background-color: white;
   border-radius: 0.25em;
-  margin: 1em 0;
-
+  box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   & .last > * {
     padding: 0 1em;
   }
@@ -20,8 +18,9 @@ export default styled(Footer)`
     font-style: normal;
     font-size: 1rem;
   }
-
-  & a {
-    color: white;
+  @media (max-width: 768px) {
+    .first  {
+      display: none;
+    }
   }
 `

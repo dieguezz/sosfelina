@@ -23,7 +23,7 @@ export default function Social({ className }) {
         <li>
           <a href="https://wa.me/34626978712" target="_blank" rel="noopener noreferrer">
             <p>Whatsapp</p>
-            <img src={Whatsapp} alt="Instagram" />
+            <img src={Whatsapp} alt="WhatsApp" />
           </a>
         </li>
         <li>
@@ -58,15 +58,6 @@ export default function Social({ className }) {
           <a href="https://twitter.com/felinafelinae" target="_blank" rel="noopener noreferrer">
             <p>Twitter</p>
             <img src={Twitter} alt="Twitter" />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.pinterest.es/felinafelinae"
-            target="_blank"
-            rel="noopener noreferrer">
-            <p>Linkedin</p>
-            <img src={Linkedin} alt="Linkedin" />
           </a>
         </li>
       </ul>

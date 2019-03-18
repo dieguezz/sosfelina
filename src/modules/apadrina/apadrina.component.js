@@ -6,7 +6,9 @@ import Link from '../Link/link.component'
 
 export default function Apadrina({ className }) {
   const [cats, setCats] = useState([])
-
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  })
   useEffect(() => {
     const cats = getCats(setCats)
     return () => cats

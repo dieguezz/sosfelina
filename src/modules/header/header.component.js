@@ -3,14 +3,6 @@ import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
 import Logo from '../../../public/assets/logo.png'
 
-const StyledMenu = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100vw;
-  font-weight: bold;
-`
-
 const initialState = false
 
 export default function Header({ className }) {
@@ -33,12 +25,12 @@ export default function Header({ className }) {
   return (
     <header className={className} ref={wrapperRef}>
       <img itemprop="logo" src={Logo} alt="SOS Felina Felinae" />
-      <StyledMenu>
+      <div className="menu">
         <div className="hamburguer" onClick={() => toggleMenu(!isOpen)}>
           Menu
         </div>
         <div className="title">SOS Felina Felinae</div>
-      </StyledMenu>
+      </div>
       <nav
         itemscope
         itemtype="http://www.schema.org/SiteNavigationElement"

@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Helmet from 'react-helmet'
 import Link from '../Link/link.component'
 
 export default function Colabora({ className }) {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  })
   return (
     <div className={className}>
       <Helmet>
@@ -51,6 +54,19 @@ export default function Colabora({ className }) {
           </p>
           <Link primary="true" type="button" to="/apadrina">
             Apadrina
+          </Link>
+        </section>
+        <section>
+          <header>
+            <h1>Adopta un gato</h1>
+          </header>
+          <p>
+            Si estás pensando en adoptar un gato, en esta web publicamos a diario los gatitos que
+            vamos acogiendo y que necesitan tu ayuda. Ponte en contacto con nosotros y sobre todo,
+            no compres.
+          </p>
+          <Link primary="true" type="button" to="/adopta">
+            Adopta
           </Link>
         </section>
       </div>
@@ -143,6 +159,9 @@ export default function Colabora({ className }) {
             Colonias y las negociaciones con los Ayuntamientos
           </li>
         </ul>
+        <Link type="button" primary="true" to="contacto">
+          Contáctanos
+        </Link>
       </section>
     </div>
   )

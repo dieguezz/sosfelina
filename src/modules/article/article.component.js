@@ -3,6 +3,7 @@ import { getEntry } from '../contentful/contentful.service'
 import Helmet from 'react-helmet'
 import SocialShare from '../social-share/social-share.ui'
 import StructuredData from '../structured-data/structured-data.component'
+import Spinner from '../spinner/spinner.ui'
 
 export default function Article({ match, className }) {
   const [{ title, cuerpo, shortText, date }, setEntry] = useState({})
@@ -24,7 +25,13 @@ export default function Article({ match, className }) {
       <header>
         <h1>{title}</h1>
       </header>
-      {cuerpo}
+      {cuerpo ? (
+        <div className="body">{cuerpo}</div>
+      ) : (
+        <div className="spinner">
+          <Spinner />
+        </div>
+      )}
       <SocialShare url={match.url} />
       <StructuredData title={title} description={shortText} date={date} />
     </div>

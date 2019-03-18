@@ -3,6 +3,7 @@ import { getCat } from '../contentful/contentful.service'
 import Link from '../Link/link.component'
 import SocialShare from '../social-share/social-share.ui'
 import Helmet from 'react-helmet'
+import Spinner from '../spinner/spinner.ui'
 
 function Pics({ srcs, name }) {
   return (srcs && srcs.map((src, index) => <img src={src} alt={name} key={index} />)) || null
@@ -10,7 +11,9 @@ function Pics({ srcs, name }) {
 
 export default function AdoptItem({ match, className }) {
   const [cat, setCat] = useState({})
-
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  })
   useEffect(() => {
     const result = getCat(setCat, match.params.id)
     return () => result
@@ -30,20 +33,28 @@ export default function AdoptItem({ match, className }) {
           },
         ]}
       />
-      <h1>{cat.name}</h1>
-      <p>{cat.text}</p>
-      <div className="cta">
-        <Link type="button" to="/contacto">
-          Adoptar o apadrinar
-        </Link>
-        <div className="social-share">
-          <p>Comparte</p>
-          <SocialShare url={url} />
+      {cat.name ? (
+        <React.Fragment>
+          <h1>{cat.name}</h1>
+          <p>{cat.text}</p>
+          <div className="cta">
+            <Link type="button" to="/contacto">
+              Adoptar o apadrinar
+            </Link>
+            <div className="social-share">
+              <p>Comparte</p>
+              <SocialShare url={url} />
+            </div>
+          </div>
+          <div className="pics">
+            <Pics srcs={cat.pictures} name={cat.name} />
+          </div>
+        </React.Fragment>
+      ) : (
+        <div className="spinner">
+          <Spinner />
         </div>
-      </div>
-      <div className="pics">
-        <Pics srcs={cat.pictures} name={cat.name} />
-      </div>
+      )}
     </div>
   )
 }

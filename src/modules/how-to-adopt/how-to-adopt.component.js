@@ -1,5 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import Link from '../Link/link.component'
 
 export default function HowToAdopt({ className }) {
   return (
@@ -150,6 +151,9 @@ export default function HowToAdopt({ className }) {
           </span>
         </p>
       </div>
+      <Link type="button" primary="true" to="contacto">
+        Contáctanos
+      </Link>
     </div>
   )
 }

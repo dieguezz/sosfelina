@@ -1,13 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Adopt from './ui/adopt.home.ui'
 import Colaborate from './ui/colaborate.home.ui'
 import SuccessfulCats from './ui/successful.home.ui'
 import WhoWeAre from './ui/whoWeAre.home.ui'
 import Helmet from 'react-helmet'
 
-export default function Home() {
+export default function Home({ className }) {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  })
   return (
-    <div className="home">
+    <div className={className}>
       <Helmet>
         <title>SOS Felina Felinae | Gatos en Adopción</title>
         <meta

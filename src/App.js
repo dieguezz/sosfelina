@@ -6,6 +6,8 @@ import Routes from './routes'
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -25,6 +27,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+  font-family: 'Nunito',sans-serif;
 }
 
 body {
@@ -36,9 +39,7 @@ body {
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-      background-color: #f2f2f2;
-      max-width: 1200px;
-      padding: 1em;
+      background-color: white;
       margin: 0 auto;
       position: relative;
 
@@ -50,7 +51,9 @@ ol, ul {
 }
 
 h1 {
-    font-size: 2.435rem;  
+    font-size: 2.435rem; 
+    font-weight: bold; 
+    color: #78abe1;
 }
 
 b {
@@ -75,16 +78,17 @@ code {
 }
 
 .dark-divider {
-    border-bottom: 4px solid #131411;
+    border-bottom: 10px solid #78abe1;
 }
 
 .inspirational {
-    background-color: #131411;
-    color: white;
+    background-color: #f8f8f8;
     padding: 1em 3em;
     font-size: 1.157rem;
-    font-style: italic;
-    border-radius: .25em;
+    color: #888;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 10px solid #78abe1;
 }
 
   @media (max-width: 768px) {

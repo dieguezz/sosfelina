@@ -3,10 +3,13 @@ import Helmet from 'react-helmet'
 import Gallery from '../gallery/gallery.ui'
 import Link from '../Link/link.component'
 import { getCats } from '../contentful/contentful.service'
+import Spinner from '../spinner/spinner.ui'
 
 export default function Adopta({ className }) {
   const [cats, setCats] = useState([])
-
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  })
   useEffect(() => {
     const cats = getCats(setCats)
     return () => cats
@@ -30,10 +33,7 @@ export default function Adopta({ className }) {
 
       <header>
         <h1>Gatos en adopción</h1>
-        <p>
-          Conoce los gatitos que podrían llegar a formar parte de tu familia. Conoce cada historia y
-          los
-        </p>
+        <p>Conoce los gatitos que podrían llegar a formar parte de tu familia.</p>
         <Link type="button" primary="true" to="/como-adoptar" style={{ margin: '1em 0' }}>
           pasos para adoptar
         </Link>
@@ -44,7 +44,13 @@ export default function Adopta({ className }) {
       <div className="inspirational">
         Última actualización: <i>{date}</i>
       </div>
-      <Gallery cats={cats} />
+      {cats.length ? (
+        <Gallery cats={cats} />
+      ) : (
+        <div className="spinner">
+          <Spinner />
+        </div>
+      )}
       <div className="cta">
         <p>
           Si no puedes <b>adoptar</b>, tienes más formas para

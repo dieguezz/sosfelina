@@ -12,7 +12,7 @@ export default styled(CatList)`
     position: absolute;
     top: 0;
     left: 0;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     font-weight: bold;
     padding: 1em;
   }
@@ -36,7 +36,7 @@ export default styled(CatList)`
   flex-direction: column;
   margin: 1em;
   flex: 30%;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   flex-wrap: wrap;
   max-width: 32%;
   transition: box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -48,7 +48,9 @@ export default styled(CatList)`
   }
   @media (max-width: 768px) {
     width: 100%;
+    max-width: 100%;
     margin: 0.5em 0;
+    flex: 100%;
     & img {
       max-width: 100%;
     }

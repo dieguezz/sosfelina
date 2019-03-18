@@ -5,7 +5,7 @@ export default function SuccessfulCats({ className }) {
   return (
     <section className={className}>
       <header>
-        <h1>Conoce las historias de personas que nos han ayudado</h1>
+        <h1>Historias de personas que nos han ayudado</h1>
       </header>
       <div className="content">
         <iframe

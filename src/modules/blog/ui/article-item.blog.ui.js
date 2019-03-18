@@ -6,10 +6,12 @@ export default styled(ArticleItem)`
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding: 2em 2em;
-  border: 1px solid black;
   margin: 2em 0;
+  max-width: 1200px;
+  background-color: white;
+  padding: 2em;
   border-radius: 0.25rem;
+  width: 100%;
   & h1 {
     font-size: 1.5em;
     text-transform: uppercase;

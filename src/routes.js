@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
-import Home from './modules/home/home.component'
+import Home from './modules/home/ui/home.ui'
 import HowToAdopt from './modules/how-to-adopt/how-to-adopt.ui'
 import Colabora from './modules/colabora/colabora.ui'
 import Apadrina from './modules/apadrina/apadrina.ui'
