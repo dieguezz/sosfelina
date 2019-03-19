@@ -1,5 +1,3 @@
-var CompressionPlugin = require('compression-webpack-plugin')
-
 module.exports = {
   modify: (config, { target, dev }, webpack) => {
     const appConfig = Object.assign({}, config)
@@ -14,15 +12,7 @@ module.exports = {
       delete newDefs['process.env.HOST']
       delete newDefs['process.env.PUBLIC_PATH']
 
-      appConfig.plugins = [].concat(appConfig.plugins).concat(
-        new CompressionPlugin({
-          filename: '[path].gz[query]',
-          algorithm: 'gzip',
-          test: /\.js$|\.css$|\.html$/,
-          threshold: 10240,
-          minRatio: 0.8,
-        }),
-      )
+      appConfig.plugins = [].concat(appConfig.plugins)
       appConfig.plugins[idx] = new webpack.DefinePlugin(newDefs)
     }
 
