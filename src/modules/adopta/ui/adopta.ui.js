@@ -9,7 +9,7 @@ export default styled(Adopta)`
   & header {
     color: #78abe1;
     margin-top: 1em;
-    background-image: url(http://localhost:3001/static/media/hero-image.f6265e2a.jpg);
+    background-image: url(${Bg});
     background-size: cover;
     background-position: 50% 50%;
     height: 600px;
@@ -18,6 +18,12 @@ export default styled(Adopta)`
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    width: 100vw;
+    transform: translateX(-50%);
+    margin-left: 50%;
+    div {
+      padding-left: 3em;
+    }
   }
   & header p {
     font-size: 1.25rem;

@@ -17,7 +17,7 @@ export default styled(AdoptItem)`
     margin-top: 1em;
 
     img {
-      max-width: 352px;
+      max-width: 384px;
       margin: 0.5em;
       border-radius: 0.25rem;
     }

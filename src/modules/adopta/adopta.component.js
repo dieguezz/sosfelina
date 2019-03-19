@@ -32,11 +32,13 @@ export default function Adopta({ className }) {
       />
 
       <header>
-        <h1>Gatos en adopción</h1>
-        <p>Conoce los gatitos que podrían llegar a formar parte de tu familia.</p>
-        <Link type="button" primary="true" to="/como-adoptar" style={{ margin: '1em 0' }}>
-          pasos para adoptar
-        </Link>
+        <div>
+          <h1>Gatos en adopción</h1>
+          <p>Conoce los gatitos que podrían llegar a formar parte de tu familia.</p>
+          <Link type="button" primary="true" to="/como-adoptar" style={{ margin: '1em 0' }}>
+            pasos para adoptar
+          </Link>
+        </div>
       </header>
       <div className="cta">
         <p>Estos pequeñines están esperando un hogar</p>

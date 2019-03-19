@@ -16,11 +16,15 @@ export default function Colabora({ className }) {
         />
       </Helmet>
       <header className="head">
-        <h1>Colabora, muchos gatos necesitan tu ayuda</h1>
-        <p>Si quieres comprometerte con la causa, estas son las formas en que nos puedes ayudar.</p>
-        <Link type="button" primary="true" to="contacto">
-          Contáctanos
-        </Link>
+        <div>
+          <h1>Colabora, muchos gatos necesitan tu ayuda</h1>
+          <p>
+            Si quieres comprometerte con la causa, estas son las formas en que nos puedes ayudar.
+          </p>
+          <Link type="button" primary="true" to="contacto">
+            Contáctanos
+          </Link>
+        </div>
       </header>
       <div className="flex">
         <section>

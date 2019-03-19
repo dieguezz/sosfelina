@@ -34,19 +34,19 @@ export default function Stories({ className }) {
           title="Maribel"
           width="1280"
           height="720"
-          src="https://www.youtube.com/embed/xKCE2jnP-xQ?rel=0"
+          src="https://www.youtube.com/embed/BhSEpyAgKPo?rel=0"
           frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         />
       </div>
       <div className="video">
-        <h2>Ana</h2>
+        <h2>Palmira</h2>
         <iframe
           title="Ana"
           width="1280"
           height="720"
-          src="https://www.youtube.com/embed/Z-sC6ftVd4Y?rel=0"
+          src="https://www.youtube.com/embed/d8nNqMyKDVc?rel=0"
           frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen

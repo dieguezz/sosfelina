@@ -12,7 +12,7 @@ export default function SuccessfulCats({ className }) {
           title="gatos-de-exito"
           width="1280"
           height="720"
-          src="https://www.youtube.com/embed/xKCE2jnP-xQ?rel=0"
+          src="https://www.youtube.com/embed/BhSEpyAgKPo?rel=0"
           frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen

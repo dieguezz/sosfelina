@@ -14,6 +14,9 @@ export default styled(Adopt)`
   background-position: 50% 50%;
   background-size: cover;
   min-height: 600px;
+  width: 100vw;
+  transform: translateX(-50%);
+  margin-left: 50%;
   & h1 {
     max-width: 60%;
   }

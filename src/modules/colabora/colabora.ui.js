@@ -21,7 +21,12 @@ export default styled(Colabora)`
     background-size: cover;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     background-color: white;
-
+    width: 100vw;
+    transform: translateX(-50%);
+    margin-left: 50%;
+    div {
+      padding-left: 3em;
+    }
     * {
       z-index: 1;
     }
@@ -32,7 +37,7 @@ export default styled(Colabora)`
     }
     h1,
     p {
-      max-width: 40%;
+      max-width: 60%;
     }
   }
 
