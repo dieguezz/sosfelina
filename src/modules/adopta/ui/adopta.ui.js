@@ -6,6 +6,7 @@ export default styled(Adopta)`
   max-width: 1200px;
   margin: 0 auto;
   margin-top: 78px;
+  overflow: hidden;
   & header {
     color: #78abe1;
     margin-top: 1em;

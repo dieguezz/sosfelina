@@ -6,6 +6,7 @@ export default styled(Colabora)`
   margin: 0 auto;
   margin-top: 78px;
   color: #888;
+  overflow: hidden;
   & .head {
     position: relative;
     padding: 0 3em;
