@@ -5,8 +5,9 @@ import { renderToString } from 'react-dom/server'
 // Import the StyledComponents SSR util
 import { ServerStyleSheet } from 'styled-components'
 import { StaticRouter } from 'react-router-dom'
-import Helmet from 'react-helmet'
 import compression from 'compression'
+import Helmet, { HelmetProvider } from 'react-helmet-async'
+
 const assets = require(process.env.RAZZLE_ASSETS_MANIFEST)
 const server = express()
 server.use(compression())
@@ -17,17 +18,19 @@ server
   .get('/*', (req, res) => {
     // Create the server side style sheet
     const context = {}
-
+    const helmetContext = {}
     const sheet = new ServerStyleSheet()
     // When the app is rendered collect the styles that are used inside it
     const markup = renderToString(
       sheet.collectStyles(
         <StaticRouter context={context} location={req.url}>
-          <App />
+          <HelmetProvider context={helmetContext}>
+            <App />
+          </HelmetProvider>
         </StaticRouter>,
       ),
     )
-    const helmet = Helmet.renderStatic()
+    const { helmet } = helmetContext
 
     if (context.url) {
       res.redirect(context.url)
@@ -54,15 +57,8 @@ server
             ${helmet.meta.toString()}
             ${helmet.link.toString()}
             <meta charSet='utf-8' />
-            <meta property="og:title" content="SOS Felina Felinae | Asociación protectora felina" />
-            <meta property="og:description" content="Somos una Asociación Protectora Felina sin Ánimo de Lucro que surge de la necesidad de Gestionar Éticamente determinadas Colonias Felinas" />
             <meta property="og:locale" content="es_ES" />
             <meta property="og:type" content="website" />
-            <meta property="og:image" content="https://images.ctfassets.net/qhgwkj3lu81s/4FzHhePlYHF9CWxs2daloM/7d1969fa583323b97177dd7672cad5f7/SOS-FELINA-Felinae__1___1_.jpg?h=250" />
-            <meta property="og:image:secure_url" content="https://images.ctfassets.net/qhgwkj3lu81s/4FzHhePlYHF9CWxs2daloM/7d1969fa583323b97177dd7672cad5f7/SOS-FELINA-Felinae__1___1_.jpg?h=250" />
-            <meta property="og:image:alt" content="SOS Felina Felinae | Asociación protectora felina" />
-            <meta property=" og:image:width" content="197" />
-            <meta property=" og:image:height" content="250" />
             <meta property="og:site_name" content="SOS Felina Felinae" />
             <meta property="og:url" content="${url}" />
             <meta name="twitter:card" content="app"></meta>

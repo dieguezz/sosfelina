@@ -27,6 +27,11 @@ export default function Apadrina({ className }) {
         title="SOS Felina Felinae | Apadrina un gato"
         meta={[
           { name: 'Description', content: 'Conoce a nuestros gatos y los pasos para apadrinar' },
+          { property: 'og:title', content: 'SOS Felina Felinae | Apadrina un gato' },
+          {
+            property: 'og:description',
+            content: 'Conoce a nuestros gatos y los pasos para apadrinar',
+          },
         ]}
       />
 

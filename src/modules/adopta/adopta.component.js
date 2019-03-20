@@ -27,6 +27,11 @@ export default function Adopta({ className }) {
       <Helmet
         title="SOS Felina Felinae | Adopta un gato"
         meta={[
+          { property: 'og:title', content: 'SOS Felina Felinae | Adopta un gato' },
+          {
+            property: 'og:description',
+            content: 'Conoce a nuestros gatos y los pasos para adoptar',
+          },
           { name: 'Description', content: 'Conoce a nuestros gatos y los pasos para adoptar' },
         ]}
       />

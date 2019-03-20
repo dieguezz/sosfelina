@@ -11,6 +11,22 @@ export default function Contacto({ className }) {
           name="Description"
           content="Contacta con nosotros. Te informaremos de todo lo necesario para empezar a ayudar."
         />
+        <meta property="og:title" content="SOS Felina Felinae | Contacto" />
+        <meta
+          property="og:description"
+          content="Contacta con nosotros. Te informaremos de todo lo necesario para empezar a ayudar."
+        />
+        <meta
+          property="og:image"
+          content="https://images.ctfassets.net/qhgwkj3lu81s/4FzHhePlYHF9CWxs2daloM/7d1969fa583323b97177dd7672cad5f7/SOS-FELINA-Felinae__1___1_.jpg?h=250"
+        />
+        <meta
+          property="og:image:secure_url"
+          content="https://images.ctfassets.net/qhgwkj3lu81s/4FzHhePlYHF9CWxs2daloM/7d1969fa583323b97177dd7672cad5f7/SOS-FELINA-Felinae__1___1_.jpg?h=250"
+        />
+        <meta property="og:image:alt" content="SOS Felina Felinae | Asociación protectora felina" />
+        <meta property="og:image:width" content="197" />
+        <meta property="<:height" content="250" />
       </Helmet>
 
       <h1>Contacta con nosotros</h1>

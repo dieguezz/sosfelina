@@ -11,6 +11,12 @@ export default function Stories({ className }) {
           name="Description"
           content="Historias de las personas que han colaborado con nosotros. Adoptando, acogiendo, o contribuyenndo de algunna manera. Gracias a todos."
         />
+        <meta property="og:title" content="SOS Felina Felinae | Casos de éxito" />
+        <meta
+          property="og:description"
+          content="Historias de las personas que han colaborado con nosotros. Adoptando, acogiendo, o contribuyenndo de algunna manera. Gracias a todos."
+        />
+        <meta property="og:video" content="https://www.youtube.com/embed/mAquBQhiHtU?rel=0" />
       </Helmet>
       <header>
         <h1>Casos de éxito</h1>

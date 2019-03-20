@@ -20,16 +20,49 @@ export default function AdoptItem({ match, className }) {
   }, [])
 
   const url = `https://sosfelina.z6.web.core.windows.net${match.url}`
+  const pic = cat && cat.pictures && cat.pictures[0] && cat.pictures[0]
+  console.log(cat.pictures)
   return (
     <div className={className}>
       <Helmet
-        title={`SOS Felina Felinae | Adopta ${cat.name ? ` a ${cat.name}` : ' un gato'}`}
+        title={`SOS Felina Felinae | Adopta ${cat.name ? `a ${cat.name}` : ' un gato'}`}
         meta={[
           {
             name: 'description',
             content: `Conoce a ${
               cat.name ? `${cat.name}` : ' este gato'
             } y los pasos para adoptarlo, apadrinarlo, o ayudarlo de alguna otra manera.`,
+          },
+          {
+            property: 'og:title',
+            content: `SOS Felina Felinae | Adopta ${cat.name ? `a ${cat.name}` : ' un gato'}`,
+          },
+          {
+            property: 'og:description',
+            content: `Conoce a ${
+              cat.name ? `${cat.name}` : ' este gato'
+            } y los pasos para adoptarlo, apadrinarlo, o ayudarlo de alguna otra manera.`,
+          },
+
+          {
+            property: 'og:image',
+            content: pic,
+          },
+          {
+            property: 'og:image:alt',
+            content: cat.name,
+          },
+          {
+            property: 'og:image:secure_url',
+            content: pic,
+          },
+          {
+            property: 'og:image:width',
+            content: '400',
+          },
+          {
+            property: 'og:image:height',
+            content: '360',
           },
         ]}
       />
