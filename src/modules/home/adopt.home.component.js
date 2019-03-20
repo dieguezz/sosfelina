@@ -1,5 +1,4 @@
 import React from 'react'
-import AdoptCat from '../../../public/assets/cat-header.jpg'
 import Link from '../Link/link.component'
 
 export default function Adopt({ className }) {

@@ -4,6 +4,7 @@ import Gallery from '../gallery/gallery.ui'
 import Link from '../Link/link.component'
 import { getCats } from '../contentful/contentful.service'
 import Spinner from '../spinner/spinner.ui'
+import Bg from '../../../public/assets/hero-image.jpg'
 
 export default function Adopta({ className }) {
   const [cats, setCats] = useState([])
@@ -33,6 +34,14 @@ export default function Adopta({ className }) {
             content: 'Conoce a nuestros gatos y los pasos para adoptar',
           },
           { name: 'Description', content: 'Conoce a nuestros gatos y los pasos para adoptar' },
+          { property: 'og:image', content: `https://sosfelinafelinae.es${Bg}` },
+          { property: 'og:image:secure_url', content: `https://sosfelinafelinae.es${Bg}` },
+          {
+            property: 'og:image:alt',
+            content: 'SOS Felina Felinae | Asociación protectora felina',
+          },
+          { property: 'og:image:width', content: '1200' },
+          { property: '<:height', content: '600' },
         ]}
       />
 

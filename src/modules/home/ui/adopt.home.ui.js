@@ -24,7 +24,7 @@ export default styled(Adopt)`
     header {
       order: 0;
       color: #78abe1;
-      padding-left: 3em;
+      margin-left: 3em;
 
       p {
         padding: 1em 0;

@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import Helmet from 'react-helmet'
 import Link from '../Link/link.component'
+import Bg from '../../../public/assets/colabora-hero.jpg'
 
 export default function Colabora({ className }) {
   useEffect(() => {
@@ -19,17 +20,11 @@ export default function Colabora({ className }) {
           property="og:description"
           content="Colabora con nosotros para ayudar a los gatitos de la calle a tener una vida mejor"
         />
-        <meta
-          property="og:image"
-          content="https://images.ctfassets.net/qhgwkj3lu81s/4FzHhePlYHF9CWxs2daloM/7d1969fa583323b97177dd7672cad5f7/SOS-FELINA-Felinae__1___1_.jpg?h=250"
-        />
-        <meta
-          property="og:image:secure_url"
-          content="https://images.ctfassets.net/qhgwkj3lu81s/4FzHhePlYHF9CWxs2daloM/7d1969fa583323b97177dd7672cad5f7/SOS-FELINA-Felinae__1___1_.jpg?h=250"
-        />
+        <meta property="og:image" content={`https://sosfelinafelinae.es${Bg}`} />
+        <meta property="og:image:secure_url" content={`https://sosfelinafelinae.es${Bg}`} />
         <meta property="og:image:alt" content="SOS Felina Felinae | Asociación protectora felina" />
-        <meta property="og:image:width" content="197" />
-        <meta property="<:height" content="250" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="<:height" content="600" />
       </Helmet>
       <header className="head">
         <div>

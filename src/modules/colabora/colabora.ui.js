@@ -6,7 +6,6 @@ export default styled(Colabora)`
   margin: 0 auto;
   margin-top: 78px;
   color: #888;
-  overflow: hidden;
   & .head {
     position: relative;
     padding: 0 3em;
@@ -26,7 +25,7 @@ export default styled(Colabora)`
     transform: translateX(-50%);
     margin-left: 50%;
     div {
-      padding-left: 3em;
+      margin-left: 3em;
     }
     * {
       z-index: 1;
@@ -91,11 +90,13 @@ export default styled(Colabora)`
   }
   @media (max-width: 768px) {
     margin-top: 57px;
+    overflow: hidden;
     ul {
       margin: 0;
     }
     .head  {
       padding-top: 1em;
+      margin-top: 0;
       &:before {
         content: '';
         position: absolute;
