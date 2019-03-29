@@ -14,7 +14,19 @@ export default function Social({ className }) {
           <span>647665310</span>
         </li>
         <li>
-          <a href="tel:647665310">
+          <a
+            href="tel:647665310"
+            onClick={url => {
+              var callback = function() {
+                if (typeof url !== 'undefined') {
+                  window.location = url
+                }
+              }
+              window.gtag('event', 'conversion', {
+                send_to: 'AW-753912554/LNOgCPTQ5JcBEOqVv-cC',
+                event_callback: callback,
+              })
+            }}>
             <p>Teléfono</p>
             <img src={Phone} alt="Instagram" />
           </a>
