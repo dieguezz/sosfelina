@@ -82,6 +82,7 @@ server
             <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
             <meta name="msapplication-TileColor" content="#da532c">
             <meta name="theme-color" content="#ffffff">
+            <meta name="google-site-verification" content="Wrtol56RMjTUIC5tGOmWkdYplMrqKQC3Ygho4fGrt5s" />
         </head>
     <body ${helmet.bodyAttributes.toString()} itemscope itemtype="http://schema.org/NGO">
         <div id="root">${markup}</div>
