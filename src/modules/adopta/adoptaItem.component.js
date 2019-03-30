@@ -34,6 +34,12 @@ export default function AdoptItem({ match, className }) {
             } y los pasos para adoptarlo, apadrinarlo, o ayudarlo de alguna otra manera.`,
           },
           {
+            name: 'Description',
+            content: `Conoce a ${
+              cat.name ? `${cat.name}` : ' este gato'
+            } y los pasos para adoptarlo, apadrinarlo, o ayudarlo de alguna otra manera.`,
+          },
+          {
             property: 'og:title',
             content: `SOS Felina Felinae | Adopta ${cat.name ? `a ${cat.name}` : ' un gato'}`,
           },

@@ -27,6 +27,10 @@ export default function Blog({ className }) {
           name="Description"
           content="Noticias sobre gatos en adopción y campañas de emergencia"
         />
+        <meta
+          name="description"
+          content="Noticias sobre gatos en adopción y campañas de emergencia"
+        />
         <meta property="og:title" content="SOS Felina Felinae | Blog" />
         <meta
           property="og:description"

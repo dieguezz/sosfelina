@@ -13,6 +13,10 @@ export default function HowToAdopt({ className }) {
           content="Te enseñamos los pasos para adoptar un gato. Queremos darles el mejor hogar posible."
         />
         <meta
+          name="description"
+          content="Te enseñamos los pasos para adoptar un gato. Queremos darles el mejor hogar posible."
+        />
+        <meta
           property="og:description"
           content="Te enseñamos los pasos para adoptar un gato. Queremos darles el mejor hogar posible."
         />

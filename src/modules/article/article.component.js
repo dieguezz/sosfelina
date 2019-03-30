@@ -18,6 +18,7 @@ export default function Article({ match, className }) {
         <title>SOS Felina Felinae | {`${title}`}</title>
         <link rel="canonical" href={`https://sosfelinafelinae.es/blog/${match.params.id}`} />
         <meta name="Description" content={shortText} />
+        <meta name="description" content={shortText} />
         <meta property="article:published_time" content={date} />
         <meta property="article:author" content="https://twitter.com/FelinaFelinae" />
         <meta property="article:tag" content="gatos" />

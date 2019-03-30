@@ -12,6 +12,10 @@ export default function Contacto({ className }) {
           name="Description"
           content="Contacta con nosotros. Te informaremos de todo lo necesario para empezar a ayudar."
         />
+        <meta
+          name="description"
+          content="Contacta con nosotros. Te informaremos de todo lo necesario para empezar a ayudar."
+        />
         <meta property="og:title" content="SOS Felina Felinae | Contacto" />
         <meta
           property="og:description"

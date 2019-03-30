@@ -35,6 +35,7 @@ export default function Adopta({ className }) {
             content: 'Conoce a nuestros gatos y los pasos para adoptar',
           },
           { name: 'Description', content: 'Conoce a nuestros gatos y los pasos para adoptar' },
+          { name: 'description', content: 'Conoce a nuestros gatos y los pasos para adoptar' },
           { property: 'og:image', content: `https://sosfelinafelinae.es${Bg}` },
           { property: 'og:image:secure_url', content: `https://sosfelinafelinae.es${Bg}` },
           {
