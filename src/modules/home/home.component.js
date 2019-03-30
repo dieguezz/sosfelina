@@ -13,6 +13,7 @@ export default function Home({ className }) {
     <div className={className}>
       <Helmet>
         <title>SOS Felina Felinae | Asociación protectora felina</title>
+        <link rel="canonical" href="https://sosfelinafelinae.es" />
         <meta
           name="Description"
           content="Somos una Asociación Protectora Felina sin Ánimo de Lucro que surge de la necesidad de Gestionar Éticamente determinadas Colonias Felinas"

@@ -25,6 +25,7 @@ export default function Apadrina({ className }) {
     <div className={className}>
       <Helmet
         title="SOS Felina Felinae | Apadrina un gato"
+        link={[{ rel: 'canonical', href: 'https://sosfelinafelinae.es/apadrina' }]}
         meta={[
           { name: 'Description', content: 'Conoce a nuestros gatos y los pasos para apadrinar' },
           { property: 'og:title', content: 'SOS Felina Felinae | Apadrina un gato' },

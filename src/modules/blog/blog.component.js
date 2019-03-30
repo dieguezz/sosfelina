@@ -22,6 +22,7 @@ export default function Blog({ className }) {
     <div className={className}>
       <Helmet>
         <title>SOS Felina Felinae | Blog</title>
+        <link rel="canonical" href="https://sosfelinafelinae.es/blog" />
         <meta
           name="Description"
           content="Noticias sobre gatos en adopción y campañas de emergencia"

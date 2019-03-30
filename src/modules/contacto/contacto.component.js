@@ -7,6 +7,7 @@ export default function Contacto({ className }) {
     <div className={className}>
       <Helmet>
         <title>SOS Felina Felinae | Contacto</title>
+        <link rel="canonical" href="https://sosfelinafelinae.es/contacto" />
         <meta
           name="Description"
           content="Contacta con nosotros. Te informaremos de todo lo necesario para empezar a ayudar."

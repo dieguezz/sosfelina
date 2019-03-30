@@ -7,6 +7,7 @@ export default function HowToAdopt({ className }) {
     <div className={className}>
       <Helmet>
         <title>SOS Felina Felinae | Cómo adoptar</title>
+        <link rel="canonical" href="https://sosfelinafelinae.es/como-adoptar" />
         <meta
           name="Description"
           content="Te enseñamos los pasos para adoptar un gato. Queremos darles el mejor hogar posible."

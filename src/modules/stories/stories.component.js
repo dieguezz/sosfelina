@@ -7,6 +7,7 @@ export default function Stories({ className }) {
     <div className={className}>
       <Helmet>
         <title>SOS Felina Felinae | Casos de éxito</title>
+        <link rel="canonical" href="https://sosfelinafelinae.es/casos-de-exito" />
         <meta
           name="Description"
           content="Historias de las personas que han colaborado con nosotros. Adoptando, acogiendo, o contribuyenndo de algunna manera. Gracias a todos."

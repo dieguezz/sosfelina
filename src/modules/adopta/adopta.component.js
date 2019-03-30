@@ -27,6 +27,7 @@ export default function Adopta({ className }) {
     <div className={className}>
       <Helmet
         title="SOS Felina Felinae | Adopta un gato"
+        link={[{ rel: 'canonical', href: 'https://sosfelinafelinae.es/adopta' }]}
         meta={[
           { property: 'og:title', content: 'SOS Felina Felinae | Adopta un gato' },
           {

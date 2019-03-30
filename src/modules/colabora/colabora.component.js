@@ -20,6 +20,7 @@ export default function Colabora({ className }) {
           property="og:description"
           content="Colabora con nosotros para ayudar a los gatitos de la calle a tener una vida mejor"
         />
+        <link rel="canonical" href="https://sosfelinafelinae.es/colabora" />
         <meta property="og:image" content={`https://sosfelinafelinae.es${Bg}`} />
         <meta property="og:image:secure_url" content={`https://sosfelinafelinae.es${Bg}`} />
         <meta property="og:image:alt" content="SOS Felina Felinae | Asociación protectora felina" />
