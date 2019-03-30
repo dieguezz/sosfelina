@@ -49,9 +49,6 @@ export default function Adopta({ className }) {
         <div>
           <h1>Gatos en adopción</h1>
           <p>Conoce los gatitos que podrían llegar a formar parte de tu familia.</p>
-          <Link type="button" primary="true" to="/como-adoptar" style={{ margin: '1em 0' }}>
-            pasos para adoptar
-          </Link>
         </div>
       </header>
       <div className="cta">
@@ -73,6 +70,12 @@ export default function Adopta({ className }) {
         </p>
         <Link type="button" className="lowercase" to="/colabora" style={{ margin: '1em 0' }}>
           colaborar
+        </Link>
+      </div>
+      <div className="cta">
+        <p>Consulta también los</p>
+        <Link type="button" primary="true" to="/como-adoptar" style={{ margin: '1em 0' }}>
+          pasos para adoptar
         </Link>
       </div>
     </div>

@@ -154,18 +154,6 @@ export default function HowToAdopt({ className }) {
             Madrid.{' '}
           </span>
         </p>
-        <p>
-          <span>ONCEAVA: Precio.</span>
-          <span>
-            La presente transmisión de propiedad es gratuita. No obstante, dado el carácter de
-            asociación sin ánimo de lucro de SOS FELINA FELINAE, Financiándose ésta con las cuotas
-            de sus socios y donativos de terceros, el ADOPTANTE realiza un donativo para cubrir los
-            gastos de preparación del animal, como vacunas, test , chips, etc a favor de SOS FELINA
-            FELINAE por una cantidad de CIEN EUROS (100,00€) o bien CIENTO CINCUENTA EUROS (150€) en
-            el caso que el animal fuera entregado esterilizado, donativo que será destinado
-            íntegramente a costear actividades dirigidas a la protección animal.
-          </span>
-        </p>
       </div>
       <Link type="button" primary="true" to="contacto">
         Contáctanos
