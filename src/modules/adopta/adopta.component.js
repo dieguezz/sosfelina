@@ -52,7 +52,7 @@ export default function Adopta({ className }) {
         </div>
       </header>
       <div className="cta">
-        <p>Estos pequeñines están esperando un hogar</p>
+        <p>Estos pequeñines están esperando un hogar, adoptar es fácil</p>
       </div>
       <div className="inspirational">
         Última actualización: <i>{date}</i>

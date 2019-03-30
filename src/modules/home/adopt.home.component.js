@@ -5,10 +5,10 @@ export default function Adopt({ className }) {
   return (
     <section className={className}>
       <header>
-        <h1>Conoce a los gatos que necesitan tu ayuda</h1>
-        <p />
+        <h1>SOS Felina Felinae</h1>
+        <p>Conoce a nuestros gatitos en adopción, colabora con nuestra asociación</p>
         <Link primary="true" type="button" to="/adopta">
-          Adopta
+          Adopta un gato
         </Link>
       </header>
     </section>
