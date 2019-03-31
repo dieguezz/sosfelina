@@ -8,6 +8,7 @@ export default styled(Contacto)`
   & .flex {
     justify-content: space-between;
   }
+
   & h1 {
     padding-bottom: 1em;
   }

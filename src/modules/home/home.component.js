@@ -16,15 +16,15 @@ export default function Home({ className }) {
         <link rel="canonical" href="https://sosfelinafelinae.es" />
         <meta
           name="Description"
-          content="Somos una Asociación Protectora Felina sin Ánimo de Lucro que surge de la necesidad de Gestionar Éticamente determinadas Colonias Felinas"
+          content="Somos una Asociación Protectora Felina sin Ánimo de Lucro que surge de la necesidad de Gestionar Éticamente determinadas Colonias Felinas. Ven a vernos a Madrid o Aranjuez"
         />
         <meta
           name="description"
-          content="Somos una Asociación Protectora Felina sin Ánimo de Lucro que surge de la necesidad de Gestionar Éticamente determinadas Colonias Felinas"
+          content="Somos una Asociación Protectora Felina sin Ánimo de Lucro que surge de la necesidad de Gestionar Éticamente determinadas Colonias Felinas. Ven a vernos a Madrid o Aranjuez"
         />
         <meta
           property="og:description"
-          content="Somos una Asociación Protectora Felina sin Ánimo de Lucro que surge de la necesidad de Gestionar Éticamente determinadas Colonias Felinas"
+          content="Somos una Asociación Protectora Felina sin Ánimo de Lucro que surge de la necesidad de Gestionar Éticamente determinadas Colonias Felinas. Ven a vernos a Madrid o Aranjuez"
         />
         <meta property="og:title" content="SOS Felina Felinae | Gatos en Adopción" />
         <meta

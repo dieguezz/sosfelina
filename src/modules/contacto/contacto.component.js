@@ -10,7 +10,7 @@ export default function Contacto({ className }) {
         <link rel="canonical" href="https://sosfelinafelinae.es/contacto" />
         <meta
           name="Description"
-          content="Contacta con nosotros. Te informaremos de todo lo necesario para empezar a ayudar."
+          content="Contacta con nosotros. Te informaremos de todo lo necesario para empezar a ayudar. Estamos en Madrid y en Aranjuez"
         />
         <meta
           name="description"
@@ -37,26 +37,47 @@ export default function Contacto({ className }) {
       <h1>Contacta con nosotros</h1>
       <div className="flex">
         <div className="block">
-          <h2>Teléfonos:</h2>
-          <ul>
-            <li>
-              <a itemprop="telephone" href="tel:647665310">
-                647 665 310
-              </a>{' '}
-              (Ana)
-            </li>
-            <li>
-              <a itemprop="telephone" href="tel:626978712">
-                626 978 712
-              </a>{' '}
-              (Sonia)
-            </li>
-          </ul>
-          <h2>Email:</h2>
-          <a itemprop="email" href="mailto:sosfelinaaranjuez@gmail.com">
-            sosfelinaaranjuez@gmail.com
-          </a>
-          <ul />
+          <section>
+            <h2>Teléfonos:</h2>
+            <ul>
+              <li>
+                <a itemprop="telephone" href="tel:647665310">
+                  647 665 310
+                </a>{' '}
+                (Ana)
+              </li>
+              <li>
+                <a itemprop="telephone" href="tel:626978712">
+                  626 978 712
+                </a>{' '}
+                (Sonia)
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h2>Email:</h2>
+            <a itemprop="email" href="mailto:sosfelinaaranjuez@gmail.com">
+              sosfelinaaranjuez@gmail.com
+            </a>
+          </section>
+          <section itemscope itemtype="http://schema.org/LocalBusiness">
+            <h2>Direcciones:</h2>
+            <h3 itemprop="name">SOS Felina Felinae</h3>
+            <ul>
+              <li itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                <span itemprop="streetAddress">Calle de los cedros,37</span>
+                <span itemprop="addressLocality">Velilla De San Antonio, Madrid</span>,
+                <span itemprop="postalCode">28891</span>
+                <span itemprop="addressCountry">España</span>
+              </li>
+              <li>
+                <span itemprop="streetAddress">Calle Santiago Rusiñol, 1</span>
+                <span itemprop="addressLocality">Aranjuez, Madrid</span>,
+                <span itemprop="postalCode">28300</span>
+                <span itemprop="addressCountry">España</span>
+              </li>
+            </ul>
+          </section>
         </div>
         <img src={Logo} alt="Logo" />
       </div>
