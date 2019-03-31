@@ -9,6 +9,10 @@ export default styled(Contacto)`
     justify-content: space-between;
   }
 
+  img {
+    object-fit: contain;
+  }
+
   & h1 {
     padding-bottom: 1em;
   }
