@@ -30,7 +30,7 @@ export default styled(Contacto)`
   }
 
   span {
-    padding: 0 1em;
+    padding: 0 0.5em;
   }
 
   @media (max-width: 768px) {

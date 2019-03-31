@@ -65,14 +65,14 @@ export default function Contacto({ className }) {
             <h3 itemprop="name">SOS Felina Felinae</h3>
             <ul>
               <li itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                <span itemprop="streetAddress">Calle Bonetero 3,</span>
-                <span itemprop="addressLocality">Madrid</span>,
+                <span itemprop="streetAddress">Calle Bonetero 3</span>
+                <span itemprop="addressLocality">Madrid</span>
                 <span itemprop="postalCode">28016</span>
                 <span itemprop="addressCountry">España</span>
               </li>
               <li>
                 <span itemprop="streetAddress">Calle Santiago Rusiñol, 1</span>
-                <span itemprop="addressLocality">Aranjuez, Madrid</span>,
+                <span itemprop="addressLocality">Aranjuez, Madrid</span>
                 <span itemprop="postalCode">28300</span>
                 <span itemprop="addressCountry">España</span>
               </li>
