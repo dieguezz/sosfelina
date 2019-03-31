@@ -25,6 +25,10 @@ export default styled(Contacto)`
     padding: 0.5em 0;
   }
 
+  span {
+    padding: 0 1em;
+  }
+
   @media (max-width: 768px) {
     margin-top: 57px;
     padding: 1em;
