@@ -12,7 +12,7 @@ export default function Home({ className }) {
   return (
     <div className={className}>
       <Helmet>
-        <title>SOS Felina Felinae | Asociación protectora felina</title>
+        <title>SOS Felina Felinae Madrid | Asociación protectora felina</title>
         <link rel="canonical" href="https://sosfelinafelinae.es" />
         <meta
           name="Description"
