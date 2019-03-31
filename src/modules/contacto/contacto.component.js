@@ -65,9 +65,9 @@ export default function Contacto({ className }) {
             <h3 itemprop="name">SOS Felina Felinae</h3>
             <ul>
               <li itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                <span itemprop="streetAddress">Calle de los cedros,37</span>
-                <span itemprop="addressLocality">Velilla De San Antonio, Madrid</span>,
-                <span itemprop="postalCode">28891</span>
+                <span itemprop="streetAddress">Calle Bonetero 3,</span>
+                <span itemprop="addressLocality">Madrid</span>,
+                <span itemprop="postalCode">28016</span>
                 <span itemprop="addressCountry">España</span>
               </li>
               <li>
