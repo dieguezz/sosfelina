@@ -8,7 +8,7 @@ export default function Footer({ className }) {
       </div>
       <div className="last">
         <small>
-          <b itemprop="legalName">© SOS Felina Felinae 2019</b>
+          <b itemProp="legalName">© SOS Felina Felinae 2019</b>
         </small>
       </div>
     </footer>

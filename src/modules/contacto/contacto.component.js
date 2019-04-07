@@ -41,13 +41,13 @@ export default function Contacto({ className }) {
             <h2>Teléfonos:</h2>
             <ul>
               <li>
-                <a itemprop="telephone" href="tel:647665310">
+                <a itemProp="telephone" href="tel:647665310">
                   647 665 310
                 </a>{' '}
                 (Ana)
               </li>
               <li>
-                <a itemprop="telephone" href="tel:626978712">
+                <a itemProp="telephone" href="tel:626978712">
                   626 978 712
                 </a>{' '}
                 (Sonia)
@@ -56,25 +56,25 @@ export default function Contacto({ className }) {
           </section>
           <section>
             <h2>Email:</h2>
-            <a itemprop="email" href="mailto:sosfelinaaranjuez@gmail.com">
+            <a itemProp="email" href="mailto:sosfelinaaranjuez@gmail.com">
               sosfelinaaranjuez@gmail.com
             </a>
           </section>
-          <section itemscope itemtype="http://schema.org/LocalBusiness">
+          <section itemScope itemType="http://schema.org/LocalBusiness">
             <h2>Direcciones:</h2>
-            <h3 itemprop="name">SOS Felina Felinae</h3>
+            <h3 itemProp="name">SOS Felina Felinae</h3>
             <ul>
-              <li itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                <span itemprop="streetAddress">Calle Bonetero 3</span>
-                <span itemprop="addressLocality">Madrid</span>
-                <span itemprop="postalCode">28016</span>
-                <span itemprop="addressCountry">España</span>
+              <li itemProp="address" itemScope itemType="http://schema.org/PostalAddress">
+                <span itemProp="streetAddress">Calle Bonetero 3</span>
+                <span itemProp="addressLocality">Madrid</span>
+                <span itemProp="postalCode">28016</span>
+                <span itemProp="addressCountry">España</span>
               </li>
               <li>
-                <span itemprop="streetAddress">Calle Santiago Rusiñol, 1</span>
-                <span itemprop="addressLocality">Aranjuez, Madrid</span>
-                <span itemprop="postalCode">28300</span>
-                <span itemprop="addressCountry">España</span>
+                <span itemProp="streetAddress">Calle Santiago Rusiñol, 1</span>
+                <span itemProp="addressLocality">Aranjuez, Madrid</span>
+                <span itemProp="postalCode">28300</span>
+                <span itemProp="addressCountry">España</span>
               </li>
             </ul>
           </section>

@@ -17,6 +17,7 @@ server
   .use(express.static(process.env.RAZZLE_PUBLIC_DIR))
   .get('/*', (req, res) => {
     // Create the server side style sheet
+    const host = req.get('Host')
     const context = {}
     const helmetContext = {}
     const sheet = new ServerStyleSheet()
@@ -31,6 +32,13 @@ server
       ),
     )
     const { helmet } = helmetContext
+    if (host !== 'sosfelinafelinae.es') {
+      return res.redirect(301, 'https://sosfelinafelinae.es/' + req.originalUrl)
+    }
+
+    if (!req.secure) {
+      res.redirect('https://' + req.headers.host + req.url)
+    }
 
     if (context.url) {
       res.redirect(context.url)
@@ -84,7 +92,7 @@ server
             <meta name="theme-color" content="#ffffff">
             <meta name="google-site-verification" content="Wrtol56RMjTUIC5tGOmWkdYplMrqKQC3Ygho4fGrt5s" />
         </head>
-    <body ${helmet.bodyAttributes.toString()} itemscope itemtype="http://schema.org/NGO">
+    <body ${helmet.bodyAttributes.toString()} itemScope itemtype="http://schema.org/NGO">
         <div id="root">${markup}</div>
     </body>
 </html>`,

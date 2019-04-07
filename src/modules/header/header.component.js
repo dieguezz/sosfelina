@@ -23,7 +23,7 @@ export default function Header({ className }) {
   }
   return (
     <header className={className} ref={wrapperRef}>
-      <img itemprop="logo" src={Logo} alt="SOS Felina Felinae" />
+      <img itemProp="logo" src={Logo} alt="SOS Felina Felinae" />
       <div className="menu">
         <div className="hamburguer" onClick={() => toggleMenu(!isOpen)}>
           Menu
@@ -31,11 +31,11 @@ export default function Header({ className }) {
         <div className="title">SOS Felina Felinae</div>
       </div>
       <nav
-        itemscope
-        itemtype="http://www.schema.org/SiteNavigationElement"
+        itemScope
+        itemType="http://www.schema.org/SiteNavigationElement"
         className={isOpen ? 'open' : ''}>
         <NavLink
-          itemprop="url"
+          itemProp="url"
           onClick={() => toggleMenu(false)}
           exact
           activeClassName="active"
@@ -43,14 +43,14 @@ export default function Header({ className }) {
           Inicio
         </NavLink>
         <NavLink
-          itemprop="url"
+          itemProp="url"
           onClick={() => toggleMenu(false)}
           activeClassName="active"
           to="/adopta">
           Adopta
         </NavLink>
         <NavLink
-          itemprop="url"
+          itemProp="url"
           onClick={() => toggleMenu(false)}
           exact
           activeClassName="active"
@@ -58,7 +58,7 @@ export default function Header({ className }) {
           Colabora
         </NavLink>
         <NavLink
-          itemprop="url"
+          itemProp="url"
           onClick={() => toggleMenu(false)}
           exact
           activeClassName="active"
@@ -66,7 +66,7 @@ export default function Header({ className }) {
           Contacto
         </NavLink>
         <NavLink
-          itemprop="url"
+          itemProp="url"
           onClick={() => toggleMenu(false)}
           activeClassName="active"
           to="/blog">
