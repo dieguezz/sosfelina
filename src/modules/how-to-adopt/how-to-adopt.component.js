@@ -36,26 +36,33 @@ export default function HowToAdopt({ className }) {
       <div>
         <header>
           <h1>Pasos para adoptar</h1>
-          <p>En SOS Felina Felinae nos preocupamos por dónde van a vivir nuestros pequeños</p>
+          <p>
+            En SOS Felina Felinae nos preocupamos por dónde van a vivir nuestros pequeños. Una
+            adopción a través de protectora da seguridad y facilidades.
+          </p>
         </header>
         <div className="list">
           <ol>
             <li>
               <h2>Entrevista telefónica</h2>
               <p>
-                Resolveremos tus dudas y te contaremos las características de la adopción o acogida
+                Resolveremos tus dudas y te contaremos las características y condiciones de la
+                adopción o acogida.
               </p>
             </li>
             <li>
               <h2>Visita al gato</h2>
-              <p>Podrás venir a ver al gato que has elegido para conocerlo</p>
+              <p>
+                Podrás venir a ver al gato que has elegido para conocerlo. Estará deseando verte y
+                seguro que habrá flechazo.
+              </p>
             </li>
           </ol>
           <ol>
             <li>
               <h2>Formalización de la adopción o acogida</h2>
               <p>
-                Una vez te hayas decidido podrás venir a por el gatito y la documentación necesaria
+                Una vez te hayas decidido, podrás venir a por el gatito y la documentación necesaria
                 para la acogida o adopción.
               </p>
             </li>

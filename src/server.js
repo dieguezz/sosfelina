@@ -36,10 +36,6 @@ server
       return res.redirect(301, 'https://sosfelinafelinae.es/' + req.originalUrl)
     }
 
-    if (!req.secure) {
-      res.redirect('https://' + req.headers.host + req.url)
-    }
-
     if (context.url) {
       res.redirect(context.url)
     } else {
