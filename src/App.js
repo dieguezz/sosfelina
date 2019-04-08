@@ -9,6 +9,7 @@ const GlobalStyle = createGlobalStyle`
 
 /* latin-ext */
 @font-face {
+  font-display: 'auto';
   font-family: 'Nunito';
   font-style: normal;
   font-weight: 400;
@@ -17,6 +18,7 @@ const GlobalStyle = createGlobalStyle`
 }
 /* latin */
 @font-face {
+  font-display: 'auto';
   font-family: 'Nunito';
   font-style: normal;
   font-weight: 400;
@@ -26,6 +28,7 @@ const GlobalStyle = createGlobalStyle`
 
 /* latin-ext */
 @font-face {
+  font-display: 'auto';
   font-family: 'Nunito';
   font-style: normal;
   font-weight: 700;
@@ -34,6 +37,7 @@ const GlobalStyle = createGlobalStyle`
 }
 /* latin */
 @font-face {
+  font-display: 'auto';
   font-family: 'Nunito';
   font-style: normal;
   font-weight: 700;
