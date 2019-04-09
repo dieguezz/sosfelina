@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from '../Link/link.component'
+import YouTube from 'react-youtube'
 
 export default function SuccessfulCats({ className }) {
   return (
@@ -8,14 +9,9 @@ export default function SuccessfulCats({ className }) {
         <h1>Historias de personas que nos han ayudado</h1>
       </header>
       <div className="content">
-        <iframe
-          title="gatos-de-exito"
-          width="1280"
-          height="720"
-          src="https://www.youtube.com/embed/BhSEpyAgKPo?rel=0"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
+        <YouTube
+          videoId="BhSEpyAgKPo" // defaults -> null
+          id="gatos-de-exito-video" // defaults -> null
         />
         <div className="cta">
           <p>

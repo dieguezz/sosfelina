@@ -1,6 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Link from '../Link/link.component'
+import YouTube from 'react-youtube'
 
 export default function Stories({ className }) {
   return (
@@ -29,38 +30,23 @@ export default function Stories({ className }) {
       </header>
       <div className="video">
         <h2>Eva y Carlos</h2>
-        <iframe
-          title="Eva y Carlos"
-          width="1280"
-          height="720"
-          src="https://www.youtube.com/embed/mAquBQhiHtU?rel=0"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
+        <YouTube
+          videoId="mAquBQhiHtU" // defaults -> null
+          id="eva-y-carlos" // defaults -> null
         />
       </div>
       <div className="video">
         <h2>Maribel</h2>
-        <iframe
-          title="Maribel"
-          width="1280"
-          height="720"
-          src="https://www.youtube.com/embed/BhSEpyAgKPo?rel=0"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
+        <YouTube
+          videoId="BhSEpyAgKPo" // defaults -> null
+          id="maribel" // defaults -> null
         />
       </div>
       <div className="video">
         <h2>Palmira</h2>
-        <iframe
-          title="Ana"
-          width="1280"
-          height="720"
-          src="https://www.youtube.com/embed/d8nNqMyKDVc?rel=0"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
+        <YouTube
+          videoId="d8nNqMyKDVc" // defaults -> null
+          id="palmira" // defaults -> null
         />
       </div>
       <div className="flex">
