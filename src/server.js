@@ -32,9 +32,9 @@ server
       ),
     )
     const { helmet } = helmetContext
-    if (host !== 'sosfelinafelinae.es') {
-      return res.redirect(301, 'https://sosfelinafelinae.es' + req.originalUrl)
-    }
+    // if (host !== 'sosfelinafelinae.es') {
+    //   return res.redirect(301, 'https://sosfelinafelinae.es' + req.originalUrl)
+    // }
 
     if (context.url) {
       res.redirect(context.url)
