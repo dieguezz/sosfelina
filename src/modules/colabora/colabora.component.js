@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import Helmet from 'react-helmet'
 import Link from '../Link/link.component'
 import Bg from '../../../public/assets/colabora-hero.jpg'
+import Donate from '../donate/donate.component'
 
 export default function Colabora({ className }) {
   useEffect(() => {
@@ -46,17 +47,29 @@ export default function Colabora({ className }) {
           <p>Puedes realizar un donativo de diferentes formas:</p>
           <ul>
             <li>
-              Donar 1€ al mes a través de{' '}
+              Donar cualquier cantidad a través de PayPal <Donate />
+            </li>
+            <li>
+              Donar 1€ al mes a través de Teaming
               <a
                 className="link"
                 href="https://www.teaming.net/sosfelinafelinae"
                 target="_blank"
                 rel="noopener noreferrer">
-                Teaming
+                Donar
               </a>
             </li>
             <li>Un ingreso en nuestro número de cuenta: BBVA ES49 0182 0954 66 02 0166 0061</li>
-            <li>Cualquier contribución material, puedes ver nuestra lista de deseos en Amazon</li>
+            <li>
+              Cualquier contribución material, puedes ver nuestra lista de deseos en Amazon
+              <a
+                className="link"
+                href="https://www.amazon.es/hz/wishlist/ls/5HRC5ZSY0E64?&amp;sort=default"
+                target="_blank"
+                rel="noopener noreferrer">
+                Ver lista
+              </a>
+            </li>
           </ul>
         </section>
         <section>

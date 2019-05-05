@@ -74,6 +74,9 @@ export default styled(Adopt)`
         text-align: center;
         padding: 0 2em;
       }
+      p {
+        padding: 1em;
+      }
     }
   }
 `

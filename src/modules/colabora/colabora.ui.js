@@ -56,15 +56,15 @@ export default styled(Colabora)`
     border-radius: 0.25em;
     li {
       padding: 1em;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
       text-transform: uppercase;
       font-size: 0.85rem;
       font-weight: bold;
       background-color: white;
       &:nth-child(even) {
         background-color: #f8f8f8;
-      }
-      &:before {
-        content: '- ';
       }
     }
   }

@@ -22,7 +22,7 @@ export default styled(Adopta)`
     transform: translateX(-50%);
     margin-left: 50%;
     div {
-      margin-left: 3em;
+      margin: 0 3em;
     }
   }
   & header p {

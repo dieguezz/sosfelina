@@ -33,17 +33,17 @@ export default function Adopta({ className }) {
           {
             property: 'og:description',
             content:
-              'Conoce a nuestros gatos y los pasos para adoptar un gato en Madrid y en Aranjuez',
+              'Adopta un gato, conoce a nuestros gatos en adopción y los pasos para adoptar un gato en Madrid y en Aranjuez',
           },
           {
             name: 'Description',
             content:
-              'Conoce a nuestros gatos y los pasos para adoptar un gato en Madrid y en Aranjuez',
+              'Adopta un gato, conoce a nuestros gatos en adopción y los pasos para adoptar un gato en Madrid y en Aranjuez',
           },
           {
             name: 'description',
             content:
-              'Conoce a nuestros gatos y los pasos para adoptar un gato en Madrid y en Aranjuez',
+              'Adopta un gato, conoce a nuestros gatos en adopción y los pasos para adoptar un gato en Madrid y en Aranjuez',
           },
           { property: 'og:image', content: `https://sosfelinafelinae.es${Bg}` },
           { property: 'og:image:secure_url', content: `https://sosfelinafelinae.es${Bg}` },
@@ -59,7 +59,10 @@ export default function Adopta({ className }) {
       <header>
         <div>
           <h1>Gatos en adopción</h1>
-          <p>Conoce los gatitos que podrían llegar a formar parte de tu familia.</p>
+          <p>
+            Adoptar un gato es fácil, conoce los gatitos que podrían llegar a formar parte de tu
+            familia.
+          </p>
         </div>
       </header>
       <div className="cta">

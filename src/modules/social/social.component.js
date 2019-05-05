@@ -2,7 +2,6 @@ import React from 'react'
 import Instagram from '../../../public/assets/instagram.svg'
 import Facebook from '../../../public/assets/facebook.svg'
 import Youtube from '../../../public/assets/youtube.svg'
-import Twitter from '../../../public/assets/twitter.svg'
 import Phone from '../../../public/assets/phone.svg'
 import Whatsapp from '../../../public/assets/whatsapp.svg'
 
@@ -63,12 +62,6 @@ export default function Social({ className }) {
             rel="noopener noreferrer">
             <p>Youtube</p>
             <img src={Youtube} alt="Youtube" />
-          </a>
-        </li>
-        <li>
-          <a href="https://twitter.com/felinafelinae" target="_blank" rel="noopener noreferrer">
-            <p>Twitter</p>
-            <img src={Twitter} alt="Twitter" />
           </a>
         </li>
       </ul>
