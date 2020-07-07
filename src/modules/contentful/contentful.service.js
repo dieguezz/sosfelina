@@ -32,11 +32,12 @@ const getPictures = async (pictures, setCats, cat) =>
       return pictureObj.fields.file.url
     })
 
-const mapToArticle = ({ ...entry }) => ({
-  ...entry.fields,
-  cuerpo: documentToReactComponents(entry.fields.cuerpo, options),
-})
-
+const mapToArticle = ({ ...entry }) => {
+  return {
+    ...entry.fields,
+    cuerpo: documentToReactComponents(entry.fields.cuerpo, options),
+  }
+}
 const mapToCat = async (cat, setCats, addPictures) => {
   const { name, id, pictures, url, text, categoria } = cat.fields
   const result = {
@@ -74,23 +75,26 @@ export async function getEntries(setState) {
 export async function getEntry(setEntry, id) {
   const result = await client.getEntries({
     content_type: 'artculo',
-    'fields.url.sys.contentType.sys.id': 'artculo',
+    // 'fields.url.sys.contentType.sys.id': 'artculo',
     'fields.url': id,
   })
-  return setEntry(mapToArticle(result.items[0]))
+
+  return result.items.length ? setEntry(mapToArticle(result.items[0])) : { cuerpo: '<div></div>' }
 }
 
 export async function getCats(setCats) {
   await client
     .getEntries({ content_type: 'gato' })
-    .then(entries => entries.items.map(cat => mapToCat(cat, setCats)))
+    .then(entries =>
+      entries.items.map(cat => mapToCat(cat, setCats)).sort((a, b) => (b.date < a.date ? -1 : 1)),
+    )
 }
 
 export async function getCat(setCat, id) {
   await client
     .getEntries({
       content_type: 'gato',
-      'fields.url.sys.contentType.sys.id': 'artculo',
+      // 'fields.url.sys.contentType.sys.id': 'gato',
       'fields.url': id,
     })
     .then(entries => entries.items.map(cat => mapToCat(cat, setCat, true)))

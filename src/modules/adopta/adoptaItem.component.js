@@ -21,7 +21,7 @@ export default function AdoptItem({ match, className }) {
 
   const url = `https://sosfelina.z6.web.core.windows.net${match.url}`
   const pic = cat && cat.pictures && cat.pictures[0] && cat.pictures[0]
-  console.log(cat.pictures)
+
   return (
     <div className={className}>
       <Helmet
