@@ -1,6 +1,7 @@
 import React from 'react'
 import Instagram from '../../../public/assets/instagram.svg'
 import Facebook from '../../../public/assets/facebook.svg'
+import Twitter from '../../../public/assets/twitter.svg'
 import Youtube from '../../../public/assets/youtube.svg'
 import Phone from '../../../public/assets/phone.svg'
 import Whatsapp from '../../../public/assets/whatsapp.svg'
@@ -16,7 +17,7 @@ export default function Social({ className }) {
           <a
             href="tel:647665310"
             onClick={url => {
-              var callback = function() {
+              var callback = function () {
                 if (typeof url !== 'undefined') {
                   window.location = url
                 }
@@ -54,7 +55,15 @@ export default function Social({ className }) {
             <img src={Facebook} alt="Facebook" />
           </a>
         </li>
-
+        <li>
+          <a
+            href="https://www.twitter.com/sosfelinafelinae"
+            target="_blank"
+            rel="noopener noreferrer">
+            <p>Twitter</p>
+            <img src={Twitter} alt="Twitter" />
+          </a>
+        </li>
         <li>
           <a
             href="https://www.youtube.com/channel/UCCsR7ARmqW55o2GhumpN-iw"

@@ -61,16 +61,10 @@ export default function Contacto({ className }) {
             </a>
           </section>
           <section itemScope itemType="http://schema.org/LocalBusiness">
-            <h2>Direcciones:</h2>
+            <h2>Dirección:</h2>
             <h3 itemProp="name">SOS Felina Felinae</h3>
             <ul>
               <li itemProp="address" itemScope itemType="http://schema.org/PostalAddress">
-                <span itemProp="streetAddress">Calle Bonetero 3</span>
-                <span itemProp="addressLocality">Madrid</span>
-                <span itemProp="postalCode">28016</span>
-                <span itemProp="addressCountry">España</span>
-              </li>
-              <li>
                 <span itemProp="streetAddress">Calle Santiago Rusiñol, 1</span>
                 <span itemProp="addressLocality">Aranjuez, Madrid</span>
                 <span itemProp="postalCode">28300</span>
