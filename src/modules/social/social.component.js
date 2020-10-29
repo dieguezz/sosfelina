@@ -56,10 +56,7 @@ export default function Social({ className }) {
           </a>
         </li>
         <li>
-          <a
-            href="https://www.twitter.com/sosfelinafelinae"
-            target="_blank"
-            rel="noopener noreferrer">
+          <a href="https://www.twitter.com/FelinaFelinae" target="_blank" rel="noopener noreferrer">
             <p>Twitter</p>
             <img src={Twitter} alt="Twitter" />
           </a>
